@@ -19,8 +19,12 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="mb-8">
-          <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-r from-orange-400 to-red-500 rounded-full flex items-center justify-center shadow-2xl">
-            <span className="text-white text-3xl font-bold">ॐ</span>
+          <div className="w-32 h-32 mx-auto mb-6 flex items-center justify-center shadow-2xl rounded-full bg-white/10 backdrop-blur-sm">
+            <img 
+              src="/lovable-uploads/49347fb5-abda-4bb8-bfc2-c59ea928bf79.png" 
+              alt="Shri Vishwanatha Gangabhavani Trust Logo" 
+              className="w-28 h-28 object-contain"
+            />
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
