@@ -54,15 +54,15 @@ const ContactSection = () => {
                 <div className="space-y-3">
                   <div>
                     <p className="font-semibold text-gray-800">Main Office</p>
-                    <p className="text-gray-600">+91 9281401019</p>
+                    <p className="text-gray-600">+91 9876543210</p>
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Trustee (Chairman)</p>
-                    <p className="text-gray-600">+91 9281401019</p>
+                    <p className="text-gray-600">+91 9876543211</p>
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Secretary</p>
-                    <p className="text-gray-600">+91 7032344599</p>
+                    <p className="text-gray-600">+91 9876543212</p>
                   </div>
                 </div>
               </CardContent>
@@ -79,11 +79,11 @@ const ContactSection = () => {
                 <div className="space-y-3">
                   <div>
                     <p className="font-semibold text-gray-800">General Inquiries</p>
-                    <p className="text-gray-600 break-all">srivgbt@gmail.com</p>
+                    <p className="text-gray-600 break-all">info@vishwanathatemple.org</p>
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Donations</p>
-                    <p className="text-gray-600 break-all">srivgbt@gmail.com</p>
+                    <p className="text-gray-600 break-all">donations@vishwanathatemple.org</p>
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Events</p>
