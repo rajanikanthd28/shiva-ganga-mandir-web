@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -13,11 +14,34 @@ const ContactSection = () => {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const { toast } = useToast();
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    // Handle form submission here
-    alert('Thank you for your message. We will contact you soon!');
+    
+    // Create mailto link
+    const mailtoLink = `mailto:srivgbt@gmail.com?subject=${encodeURIComponent(`[Website Contact] ${formData.subject}`)}&body=${encodeURIComponent(`
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Subject: ${formData.subject}
+
+Message:
+${formData.message}
+
+---
+This message was sent from the website contact form.
+    `)}`;
+    
+    // Open default email client
+    window.location.href = mailtoLink;
+    
+    toast({
+      title: "Email Client Opened",
+      description: "Your default email application should open with the message ready to send.",
+    });
+    
     setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
   };
 
@@ -26,6 +50,11 @@ const ContactSection = () => {
       ...formData,
       [e.target.name]: e.target.value
     });
+  };
+
+  const handleGetDirections = () => {
+    const googleMapsUrl = `https://www.google.com/maps?q=18.22819804637545,78.34921136416641`;
+    window.open(googleMapsUrl, '_blank');
   };
 
   return (
@@ -87,7 +116,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Events</p>
-                    <p className="text-gray-600 break-all">events@vishwanathatemple.org</p>
+                    <p className="text-gray-600 break-all">srivgbt@gmail.com</p>
                   </div>
                 </div>
               </CardContent>
@@ -107,6 +136,9 @@ const ContactSection = () => {
                   <p className="text-gray-600">Talamadla Village</p>
                   <p className="text-gray-600">Telangana - 502001</p>
                   <p className="text-gray-600">India</p>
+                  <p className="text-sm text-gray-500 mt-3">
+                    Coordinates: 18.228°N, 78.349°E
+                  </p>
                 </div>
               </CardContent>
             </Card>
@@ -146,7 +178,7 @@ const ContactSection = () => {
               <CardHeader>
                 <CardTitle className="text-2xl text-gray-800">Send Us a Message</CardTitle>
                 <CardDescription>
-                  We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible.
+                  We'd love to hear from you. Fill out the form below and your email client will open with the message ready to send.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -270,13 +302,17 @@ const ContactSection = () => {
                   <div className="h-64 bg-gray-200 rounded-lg flex items-center justify-center">
                     <div className="text-center text-gray-600">
                       <MapPin className="w-12 h-12 mx-auto mb-2" />
-                      <p className="font-semibold">Interactive Map</p>
+                      <p className="font-semibold">Temple Location</p>
                       <p className="text-sm">Talamadla Village, Telangana</p>
-                      <p className="text-xs mt-2">Google Maps integration would be embedded here</p>
+                      <p className="text-xs mt-2">Coordinates: 18.228°N, 78.349°E</p>
                     </div>
                   </div>
                   <div className="mt-4 text-center">
-                    <Button variant="outline" className="border-blue-500 text-blue-600 hover:bg-blue-50">
+                    <Button 
+                      onClick={handleGetDirections}
+                      variant="outline" 
+                      className="border-blue-500 text-blue-600 hover:bg-blue-50"
+                    >
                       📍 Get Directions
                     </Button>
                   </div>

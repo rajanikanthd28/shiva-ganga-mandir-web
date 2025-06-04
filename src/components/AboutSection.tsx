@@ -56,7 +56,7 @@ const AboutSection = () => {
           <div className="w-20 h-1 bg-gradient-to-r from-orange-400 to-red-500 mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-12 items-start mb-16">
           {/* About Content */}
           <div className="space-y-6">
             <Card className="shadow-lg border-t-4 border-orange-400">
@@ -164,8 +164,54 @@ const AboutSection = () => {
           </div>
         </div>
 
+        {/* Full Width Temple Project Details Gallery */}
+        <div className="mb-16">
+          <Card className="shadow-xl border-t-4 border-gradient-to-r from-orange-400 to-red-500">
+            <CardHeader className="text-center">
+              <CardTitle className="text-3xl bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+                Complete Temple Project Information
+              </CardTitle>
+              <CardDescription className="text-lg text-gray-600">
+                Detailed documentation of our temple construction plans, costs, and certifications
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="p-6">
+              <Carousel className="w-full">
+                <CarouselContent>
+                  {templeImages.map((image, index) => (
+                    <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                      <div className="p-2">
+                        <Card className="border-none shadow-lg">
+                          <CardContent className="p-0">
+                            <div className="aspect-[4/3] overflow-hidden rounded-lg">
+                              <img
+                                src={image.src}
+                                alt={image.alt}
+                                className="w-full h-full object-contain bg-gradient-to-br from-orange-50 to-blue-50 hover:scale-105 transition-transform cursor-pointer"
+                                onClick={() => window.open(image.src, '_blank')}
+                              />
+                            </div>
+                          </CardContent>
+                        </Card>
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious className="left-4" />
+                <CarouselNext className="right-4" />
+              </Carousel>
+              
+              <div className="mt-6 text-center">
+                <p className="text-gray-600">
+                  Click on any image to view in full size | Swipe or use arrows to navigate through all project details
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
         {/* Call to Action */}
-        <div className="mt-16 text-center">
+        <div className="text-center">
           <div className="bg-gradient-to-r from-orange-100 to-blue-100 rounded-2xl p-8 shadow-lg">
             <h3 className="text-3xl font-bold text-gray-800 mb-4">Join Our Sacred Journey</h3>
             <p className="text-lg text-gray-700 mb-6 max-w-3xl mx-auto">
@@ -175,6 +221,8 @@ const AboutSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
                 href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?saralID=-912815721" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-gradient-to-r from-orange-500 to-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-orange-600 hover:to-red-700 transition-all transform hover:scale-105 shadow-lg"
               >
                 🙏 Support Our Mission
