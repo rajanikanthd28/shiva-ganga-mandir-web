@@ -1,37 +1,38 @@
-
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const TrusteesSection = () => {
   const trustees = [
     {
-      name: "Sri Rajesh Kumar",
-      role: "Chairman & Founder Trustee",
+      name: "Chairman & Founder Trustee",
+      role: "Spiritual Leader & Engineer",
       image: "/placeholder.svg",
-      description: "A devoted spiritual leader with 25+ years of service to Hindu dharma. Instrumental in establishing multiple temples across Telangana.",
-      background: "Former engineer turned spiritual guide, dedicated to preserving ancient traditions and serving the community."
+      description: "A devoted spiritual guide with over 25 years of dedicated service to Sanatana Dharma. As a Computer Science Engineer turned spiritual mentor, he has played a pivotal role in spreading Hindu values and Vedic knowledge, especially among the youth.",
+      background: "His unwavering commitment to preserving ancient traditions and uplifting the community is the driving force behind the establishment of the Shri Vishwanatha Gangabhavani Trust."
     },
     {
-      name: "Smt. Lakshmi Devi",
+      name: "Shri K. Narsimloo",
       role: "Secretary & Trustee",
       image: "/placeholder.svg", 
-      description: "An accomplished educator and social worker, passionate about cultural preservation and women's empowerment through spiritual practices.",
-      background: "PhD in Sanskrit, 20+ years in education sector, actively involved in promoting Vedic knowledge among youth."
+      description: "An accomplished educator and social worker with more than 20 years of experience in the education sector. Shri Narsimloo is deeply passionate about preserving Indian culture through spiritual education.",
+      background: "His leadership ensures that the Trust's activities remain rooted in dharma and focused on community upliftment."
     },
     {
-      name: "Sri Venkata Rao",
+      name: "Shri K. Narayana",
       role: "Treasurer & Trustee",
       image: "/placeholder.svg",
-      description: "A chartered accountant with expertise in financial management and transparent governance of religious institutions.",
-      background: "15+ years experience in trust management, ensures all donations are utilized effectively for temple construction."
-    },
-    {
-      name: "Dr. Prasad Reddy",
-      role: "Managing Trustee",
-      image: "/placeholder.svg",
-      description: "A medical professional and spiritual practitioner, oversees all construction activities and community health initiatives.",
-      background: "MBBS, MD in Community Medicine, combines modern healthcare with traditional healing practices."
+      description: "A former Government employee with strong expertise in financial management and transparent governance. Shri Narayana plays a crucial role in ensuring that all donations are utilized effectively and responsibly for the temple's construction.",
+      background: "His integrity and accountability make him a pillar of the Trust's financial stewardship and associated charitable activities."
     }
+  ];
+
+  const otherMembers = [
+    "SHRI K YADAGIRI S/o LATE K RAJAIAH",
+    "SHRI K YADAGIRI S/o LATE K BALAIAH", 
+    "SHRI K SRINIVAS",
+    "SHRI D PRAKASH",
+    "SHRI D RAMESH",
+    "SHRI M MEGHANATH"
   ];
 
   return (
@@ -46,7 +47,7 @@ const TrusteesSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
           {trustees.map((trustee, index) => (
             <Card key={index} className="shadow-lg hover:shadow-xl transition-all transform hover:scale-105 bg-white border-t-4 border-orange-400">
               <CardHeader className="text-center pb-2">
@@ -75,6 +76,29 @@ const TrusteesSection = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Other Members Section */}
+        <div className="mb-12">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-bold text-gray-800 mb-4">Other Trust Members</h3>
+            <div className="w-16 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto rounded-full"></div>
+          </div>
+          
+          <Card className="shadow-lg bg-gradient-to-r from-blue-50 to-purple-50 border-none">
+            <CardContent className="p-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {otherMembers.map((member, index) => (
+                  <div key={index} className="flex items-center space-x-3 p-3 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div className="w-8 h-8 bg-gradient-to-r from-orange-400 to-red-500 rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-white text-sm font-bold">🙏</span>
+                    </div>
+                    <span className="text-gray-700 font-medium text-sm">{member}</span>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
         </div>
 
         <div className="mt-12 text-center">
