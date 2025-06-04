@@ -1,53 +1,8 @@
 
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const AboutSection = () => {
-  const templeImages = [
-    {
-      src: "/lovable-uploads/6e0057b4-c948-4449-bd2c-83fc3e24fc6c.png",
-      alt: "Temple Project Banner - Shri Vishwanatha Gangabhavani Trust"
-    },
-    {
-      src: "/lovable-uploads/555ca018-628e-40c4-a384-4c0c8ac4a4c0.png", 
-      alt: "Temple History and Significance"
-    },
-    {
-      src: "/lovable-uploads/0c877f5a-0d26-45cb-8b65-539f1c7b1d11.png",
-      alt: "Temple Deities and Sacred Items"
-    },
-    {
-      src: "/lovable-uploads/e7cff029-b9f8-40ce-b33d-736f27cb15b3.png",
-      alt: "Temple Architecture Plans"
-    },
-    {
-      src: "/lovable-uploads/ad727908-1328-4646-bce5-aabcffe73f22.png",
-      alt: "Temple Specifications and Features"
-    },
-    {
-      src: "/lovable-uploads/71b1a4a6-d1b0-42ed-a5a7-3b57de5c1267.png",
-      alt: "Temple Construction Cost Breakdown"
-    },
-    {
-      src: "/lovable-uploads/248fb4e7-27fb-4d8c-9619-74333cd7fd89.png",
-      alt: "Trust 80G Tax Exemption Certificate"
-    },
-    {
-      src: "/lovable-uploads/50541aad-bc2c-4ea6-b110-777015e3a40b.png",
-      alt: "ISO 9001:2015 Certificate and NGO Registration"
-    },
-    {
-      src: "/lovable-uploads/b34baa60-dd82-46ef-ad5d-22dbf856b425.png",
-      alt: "Online Donations and Bank Account Details"
-    },
-    {
-      src: "/lovable-uploads/563b292c-e016-4274-a31b-6d16b708d0d6.png",
-      alt: "Donation Benefits and Tax Exemption Information"
-    }
-  ];
-
   return (
     <section id="about" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -56,136 +11,82 @@ const AboutSection = () => {
           <div className="w-20 h-1 bg-gradient-to-r from-orange-400 to-red-500 mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
-          {/* About Content */}
-          <div className="space-y-6">
-            <Card className="shadow-lg border-t-4 border-orange-400">
-              <CardHeader>
-                <CardTitle className="text-2xl text-orange-600">Our Vision</CardTitle>
-              </CardHeader>
-              <CardContent>
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-2xl font-semibold text-orange-600 mb-3">Our Trust</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  The Shri Vishwanatha Gangabhavani Trust was established in April 2024 with a divine mission to 
-                  construct a magnificent temple dedicated to Lord Shiva (Vishwanatha) and Goddess Ganga (Gangabhavani) 
-                  in Talamadla village, Telangana.
+                  The Shri Vishwanatha Gangabhavani Trust was established in April 2024 with the divine vision 
+                  of constructing a magnificent temple dedicated to Lord Shiva (Shri Vishwanatha) and 
+                  Gangamatha (Shri Gangabhavani) in the sacred village of Talamadla, Telangana.
                 </p>
-              </CardContent>
-            </Card>
+              </div>
 
-            <Card className="shadow-lg border-t-4 border-blue-400">
-              <CardHeader>
-                <CardTitle className="text-2xl text-blue-600">Our Mission</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <p className="text-gray-700 leading-relaxed">
-                    To create a spiritual center that serves as a beacon of dharma, devotion, and cultural revival, 
-                    fostering community unity and preserving ancient Hindu traditions for future generations.
-                  </p>
-                  <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-center"><span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Promote spiritual education and Vedic knowledge</li>
-                    <li className="flex items-center"><span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Serve the community through charitable activities</li>
-                    <li className="flex items-center"><span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Preserve and celebrate Hindu culture and traditions</li>
-                  </ul>
-                </div>
-              </CardContent>
-            </Card>
+              <div>
+                <h3 className="text-2xl font-semibold text-blue-600 mb-3">Our Mission</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  To create a spiritual sanctuary that serves as a beacon of dharma, devotion, and cultural 
+                  preservation. Our temple will be a place where devotees can find peace, seek blessings, 
+                  and connect with the divine essence of Lord Shiva and the sacred Ganga.
+                </p>
+              </div>
 
-            <Card className="shadow-lg border-t-4 border-green-400">
-              <CardHeader>
-                <CardTitle className="text-2xl text-green-600">Trust Certifications</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-2 gap-4 text-sm">
-                  <div className="flex items-center space-x-2">
-                    <span className="w-3 h-3 bg-green-500 rounded-full"></span>
-                    <span className="text-gray-700">80G Tax Exemption</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span className="w-3 h-3 bg-blue-500 rounded-full"></span>
-                    <span className="text-gray-700">ISO 9001:2015 Certified</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span className="w-3 h-3 bg-orange-500 rounded-full"></span>
-                    <span className="text-gray-700">DARPAN (NITI Aayog) Listed</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span className="w-3 h-3 bg-purple-500 rounded-full"></span>
-                    <span className="text-gray-700">Registered Trust</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Temple Information Gallery */}
-          <div className="lg:sticky lg:top-8">
-            <Card className="shadow-xl border-t-4 border-gradient-to-r from-orange-400 to-red-500">
-              <CardHeader>
-                <CardTitle className="text-2xl text-center bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
-                  Temple Project Details
-                </CardTitle>
-                <CardDescription className="text-center text-gray-600">
-                  Scroll through our detailed temple plans, costs, and certifications
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="p-2">
-                <Carousel className="w-full">
-                  <CarouselContent>
-                    {templeImages.map((image, index) => (
-                      <CarouselItem key={index}>
-                        <div className="p-2">
-                          <Card className="border-none shadow-lg">
-                            <CardContent className="p-0">
-                              <div className="aspect-[4/3] overflow-hidden rounded-lg">
-                                <img
-                                  src={image.src}
-                                  alt={image.alt}
-                                  className="w-full h-full object-contain bg-gradient-to-br from-orange-50 to-blue-50"
-                                />
-                              </div>
-                            </CardContent>
-                          </Card>
-                        </div>
-                      </CarouselItem>
-                    ))}
-                  </CarouselContent>
-                  <CarouselPrevious className="left-2" />
-                  <CarouselNext className="right-2" />
-                </Carousel>
-                
-                <div className="mt-4 text-center">
-                  <p className="text-sm text-gray-600">
-                    Swipe or use arrows to view detailed information about our temple project
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-
-        {/* Call to Action */}
-        <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-orange-100 to-blue-100 rounded-2xl p-8 shadow-lg">
-            <h3 className="text-3xl font-bold text-gray-800 mb-4">Join Our Sacred Journey</h3>
-            <p className="text-lg text-gray-700 mb-6 max-w-3xl mx-auto">
-              Every contribution, no matter how small, brings us closer to completing this divine temple. 
-              Your donation not only supports the construction but also helps preserve our cultural heritage for future generations.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="#donate" 
-                className="bg-gradient-to-r from-orange-500 to-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-orange-600 hover:to-red-700 transition-all transform hover:scale-105 shadow-lg"
-              >
-                🙏 Support Our Mission
-              </a>
-              <a 
-                href="#contact" 
-                className="border-2 border-blue-500 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-all transform hover:scale-105"
-              >
-                📞 Contact Us
-              </a>
+              <div>
+                <h3 className="text-2xl font-semibold text-purple-600 mb-3">Our Vision</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  To establish a center of spiritual learning and cultural revival that will serve generations 
+                  of devotees, promoting Hindu values, traditions, and the timeless teachings of 
+                  Sanatana Dharma while fostering community service and social upliftment.
+                </p>
+              </div>
             </div>
+          </div>
+
+          <div className="space-y-6">
+            <Card className="shadow-lg hover:shadow-xl transition-shadow border-t-4 border-orange-400">
+              <CardHeader>
+                <CardTitle className="text-orange-600 flex items-center">
+                  🏛️ Trust Certifications
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-gray-700">
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>PAN Registered</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>80G Tax Exemption Certified</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>ISO Certified Organization</li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>Listed on DARPAN (NITI Aayog)</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="shadow-lg hover:shadow-xl transition-shadow border-t-4 border-blue-400">
+              <CardHeader>
+                <CardTitle className="text-blue-600 flex items-center">
+                  💫 Our Values
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-2 gap-4 text-center">
+                  <div className="p-3 bg-orange-50 rounded-lg">
+                    <div className="text-2xl mb-2">🙏</div>
+                    <h4 className="font-semibold text-orange-600">Devotion</h4>
+                  </div>
+                  <div className="p-3 bg-blue-50 rounded-lg">
+                    <div className="text-2xl mb-2">🤝</div>
+                    <h4 className="font-semibold text-blue-600">Service</h4>
+                  </div>
+                  <div className="p-3 bg-purple-50 rounded-lg">
+                    <div className="text-2xl mb-2">🕉️</div>
+                    <h4 className="font-semibold text-purple-600">Dharma</h4>
+                  </div>
+                  <div className="p-3 bg-green-50 rounded-lg">
+                    <div className="text-2xl mb-2">💝</div>
+                    <h4 className="font-semibold text-green-600">Compassion</h4>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>
