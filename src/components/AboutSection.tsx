@@ -7,44 +7,20 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 const AboutSection = () => {
   const templeImages = [
     {
-      src: "/lovable-uploads/6e0057b4-c948-4449-bd2c-83fc3e24fc6c.png",
-      alt: "Temple Project Banner - Shri Vishwanatha Gangabhavani Trust"
+      src: "/lovable-uploads/0aac44a4-f8d3-415c-8b20-0c5dc16f4655.png",
+      alt: "Temple Ground Plan and Side Elevation - Detailed Architectural Drawings"
     },
     {
-      src: "/lovable-uploads/555ca018-628e-40c4-a384-4c0c8ac4a4c0.png", 
-      alt: "Temple History and Significance"
+      src: "/lovable-uploads/37b6f914-cfda-4e49-888d-9a0c75a17bf9.png", 
+      alt: "Sri Gangadevi Temple Side Elevation - Architectural Design"
     },
     {
-      src: "/lovable-uploads/0c877f5a-0d26-45cb-8b65-539f1c7b1d11.png",
-      alt: "Temple Deities and Sacred Items"
+      src: "/lovable-uploads/f3e6c192-b40f-4c8d-b725-71face2297e0.png",
+      alt: "Sri Shivalayam and Sri Gangadevi Temple Front Elevation"
     },
     {
-      src: "/lovable-uploads/e7cff029-b9f8-40ce-b33d-736f27cb15b3.png",
-      alt: "Temple Architecture Plans"
-    },
-    {
-      src: "/lovable-uploads/ad727908-1328-4646-bce5-aabcffe73f22.png",
-      alt: "Temple Specifications and Features"
-    },
-    {
-      src: "/lovable-uploads/71b1a4a6-d1b0-42ed-a5a7-3b57de5c1267.png",
-      alt: "Temple Construction Cost Breakdown"
-    },
-    {
-      src: "/lovable-uploads/248fb4e7-27fb-4d8c-9619-74333cd7fd89.png",
-      alt: "Trust 80G Tax Exemption Certificate"
-    },
-    {
-      src: "/lovable-uploads/50541aad-bc2c-4ea6-b110-777015e3a40b.png",
-      alt: "ISO 9001:2015 Certificate and NGO Registration"
-    },
-    {
-      src: "/lovable-uploads/b34baa60-dd82-46ef-ad5d-22dbf856b425.png",
-      alt: "Online Donations and Bank Account Details"
-    },
-    {
-      src: "/lovable-uploads/563b292c-e016-4274-a31b-6d16b708d0d6.png",
-      alt: "Donation Benefits and Tax Exemption Information"
+      src: "/lovable-uploads/67f903ea-56b6-4e44-9733-523e4660e716.png",
+      alt: "Sri Shivalayam Temple Side Elevation - Detailed Architecture"
     }
   ];
 
@@ -123,10 +99,10 @@ const AboutSection = () => {
             <Card className="shadow-xl border-t-4 border-gradient-to-r from-orange-400 to-red-500">
               <CardHeader>
                 <CardTitle className="text-2xl text-center bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
-                  Temple Project Details
+                  Temple Architecture Plans
                 </CardTitle>
                 <CardDescription className="text-center text-gray-600">
-                  Scroll through our detailed temple plans, costs, and certifications
+                  Detailed architectural drawings and elevations of our temple complex
                 </CardDescription>
               </CardHeader>
               <CardContent className="p-2">
@@ -156,7 +132,7 @@ const AboutSection = () => {
                 
                 <div className="mt-4 text-center">
                   <p className="text-sm text-gray-600">
-                    Swipe or use arrows to view detailed information about our temple project
+                    Swipe or use arrows to view detailed architectural plans
                   </p>
                 </div>
               </CardContent>
@@ -165,21 +141,21 @@ const AboutSection = () => {
         </div>
 
         {/* Full Width Temple Project Details Gallery */}
-        <div className="mb-16">
+        <div className="w-full max-w-none -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 mb-16">
           <Card className="shadow-xl border-t-4 border-gradient-to-r from-orange-400 to-red-500">
             <CardHeader className="text-center">
               <CardTitle className="text-3xl bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
-                Complete Temple Project Information
+                Complete Temple Architectural Plans
               </CardTitle>
               <CardDescription className="text-lg text-gray-600">
-                Detailed documentation of our temple construction plans, costs, and certifications
+                Detailed architectural drawings showing ground plans, elevations, and temple design specifications
               </CardDescription>
             </CardHeader>
             <CardContent className="p-6">
               <Carousel className="w-full">
                 <CarouselContent>
                   {templeImages.map((image, index) => (
-                    <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                    <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
                       <div className="p-2">
                         <Card className="border-none shadow-lg">
                           <CardContent className="p-0">
@@ -203,7 +179,7 @@ const AboutSection = () => {
               
               <div className="mt-6 text-center">
                 <p className="text-gray-600">
-                  Click on any image to view in full size | Swipe or use arrows to navigate through all project details
+                  Click on any architectural drawing to view in full size | Swipe or use arrows to navigate through all temple plans
                 </p>
               </div>
             </CardContent>
