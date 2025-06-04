@@ -82,16 +82,16 @@ This message was sent from the website contact form.
               <CardContent>
                 <div className="space-y-3">
                   <div>
-                    <p className="font-semibold text-gray-800">Main Office</p>
-                    <p className="text-gray-600">+91 9281401019</p>
-                  </div>
-                  <div>
                     <p className="font-semibold text-gray-800">Trustee (Chairman)</p>
                     <p className="text-gray-600">+91 9281401019</p>
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Secretary</p>
                     <p className="text-gray-600">+91 7032344599</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-800">Treasurer</p>
+                    <p className="text-gray-600">+91 9966727818</p>
                   </div>
                 </div>
               </CardContent>
