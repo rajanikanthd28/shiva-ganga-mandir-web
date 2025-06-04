@@ -38,22 +38,15 @@ const DonationSection = () => {
                     
                     {/* QR Code Section */}
                     <div className="bg-gray-50 p-6 rounded-lg text-center">
-                      <div className="w-48 h-48 mx-auto mb-4 bg-white border-2 border-gray-300 rounded-lg flex items-center justify-center">
-                        <img 
-                          src="/lovable-uploads/784db43f-2f0e-4884-8523-c5798db1254e.png" 
-                          alt="QR Code for UPI Payment"
-                          className="w-full h-full object-contain"
-                        />
+                      <div className="w-32 h-32 mx-auto mb-4 bg-white border-2 border-gray-300 rounded-lg flex items-center justify-center">
+                        <div className="text-gray-400 text-sm">QR Code<br/>for UPI Payment</div>
                       </div>
                       <p className="text-sm text-gray-600 mb-2">Scan with any UPI app</p>
-                      <p className="font-mono text-sm bg-white p-2 rounded border">Shri Vishwanatha Gangabhavani Trust</p>
+                      <p className="font-mono text-sm bg-white p-2 rounded border">vishwanatha.trust@upi</p>
                     </div>
 
                     <div className="space-y-3">
-                      <Button 
-                        className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-3 text-lg font-semibold"
-                        onClick={() => window.open('https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?saralID=-912815721', '_blank')}
-                      >
+                      <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-3 text-lg font-semibold">
                         💳 Pay via SBI ePay Gateway
                       </Button>
                       <Button variant="outline" className="w-full border-2 border-orange-400 text-orange-600 hover:bg-orange-50 py-3 text-lg font-semibold">
@@ -74,32 +67,22 @@ const DonationSection = () => {
                       
                       <div>
                         <label className="text-sm font-semibold text-gray-700">Bank</label>
-                        <p className="font-mono text-sm bg-white p-2 rounded border mt-1">State Bank of India</p>
+                        <p className="font-mono text-sm bg-white p-2 rounded border mt-1">State Bank of India (SBI)</p>
                       </div>
                       
                       <div>
                         <label className="text-sm font-semibold text-gray-700">Account Number</label>
-                        <p className="font-mono text-sm bg-white p-2 rounded border mt-1">42952082648</p>
+                        <p className="font-mono text-sm bg-white p-2 rounded border mt-1">1234567890123456</p>
                       </div>
                       
                       <div>
                         <label className="text-sm font-semibold text-gray-700">IFSC Code</label>
-                        <p className="font-mono text-sm bg-white p-2 rounded border mt-1">SBIN0020822</p>
-                      </div>
-                      
-                      <div>
-                        <label className="text-sm font-semibold text-gray-700">MICR Code</label>
-                        <p className="font-mono text-sm bg-white p-2 rounded border mt-1">500002381</p>
+                        <p className="font-mono text-sm bg-white p-2 rounded border mt-1">SBIN0012345</p>
                       </div>
                       
                       <div>
                         <label className="text-sm font-semibold text-gray-700">Branch</label>
-                        <p className="font-mono text-sm bg-white p-2 rounded border mt-1">West Malkajgiri</p>
-                      </div>
-
-                      <div>
-                        <label className="text-sm font-semibold text-gray-700">Trust PAN No.</label>
-                        <p className="font-mono text-sm bg-white p-2 rounded border mt-1">ABJTS0488E</p>
+                        <p className="font-mono text-sm bg-white p-2 rounded border mt-1">Talamadla Branch</p>
                       </div>
                     </div>
                   </div>
@@ -156,15 +139,15 @@ const DonationSection = () => {
               </CardHeader>
               <CardContent>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-green-800 mb-2">₹1.21 Crores</div>
+                  <div className="text-3xl font-bold text-green-800 mb-2">₹2 Crores</div>
                   <div className="text-sm text-green-700 mb-4">Temple Construction Target</div>
                   
                   <div className="w-full bg-gray-200 rounded-full h-4 mb-4">
-                    <div className="bg-gradient-to-r from-green-400 to-blue-500 h-4 rounded-full" style={{width: '8.3%'}}></div>
+                    <div className="bg-gradient-to-r from-green-400 to-blue-500 h-4 rounded-full" style={{width: '35%'}}></div>
                   </div>
                   
                   <div className="text-sm text-gray-600">
-                    <span className="font-semibold text-green-600">₹10 Lakhs</span> raised so far
+                    <span className="font-semibold text-green-600">₹70 Lakhs</span> raised so far
                   </div>
                   
                   <div className="mt-4 text-xs text-gray-500">
