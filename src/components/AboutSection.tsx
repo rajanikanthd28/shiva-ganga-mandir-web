@@ -174,7 +174,7 @@ const AboutSection = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?saralID=-912815721" 
+                href="#donate" 
                 className="bg-gradient-to-r from-orange-500 to-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-orange-600 hover:to-red-700 transition-all transform hover:scale-105 shadow-lg"
               >
                 🙏 Support Our Mission
