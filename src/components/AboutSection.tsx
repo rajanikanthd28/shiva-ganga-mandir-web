@@ -48,12 +48,82 @@ const AboutSection = () => {
     }
   ];
 
+  const architecturalPlans = [
+    {
+      src: "/lovable-uploads/6ce0059a-1919-4f09-a507-5b5325bc6f70.png",
+      alt: "Sri Gangadevi Ammavaru Temple and Sri Shivalayam Temple Ground Plan, Side Elevation and Section Views"
+    },
+    {
+      src: "/lovable-uploads/c3e6a692-a1dd-4bce-9615-a5fafb0c829c.png",
+      alt: "Front Elevation of Sri Shivalayam Temple and Sri Gangadevi Temple"
+    },
+    {
+      src: "/lovable-uploads/ff0285ec-dc7d-4121-ac70-d858e4890f52.png",
+      alt: "Side Elevation of Sri Gangadevi Temple"
+    },
+    {
+      src: "/lovable-uploads/13c469c3-c176-4ca7-9698-4272f1014658.png",
+      alt: "Side Elevation of Sri Shivalayam Temple"
+    },
+    {
+      src: "/lovable-uploads/a545d56a-335c-4092-b8e3-f91c35bfb113.png",
+      alt: "Complete Front Elevation View of Both Temples"
+    }
+  ];
+
   return (
     <section id="about" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About Our Sacred Mission</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-orange-400 to-red-500 mx-auto rounded-full"></div>
+        </div>
+
+        {/* Temple Proposed Design Section */}
+        <div className="mb-16">
+          <Card className="shadow-xl border-t-4 border-gradient-to-r from-orange-400 to-red-500">
+            <CardHeader className="text-center">
+              <CardTitle className="text-3xl bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+                Proposed Temple Design
+              </CardTitle>
+              <CardDescription className="text-lg text-gray-600">
+                Divine architectural vision of Sri Vishwanatha and Sri Gangadevi Temples
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="p-6">
+              <div className="grid md:grid-cols-2 gap-6">
+                <Card className="border-none shadow-lg overflow-hidden">
+                  <CardContent className="p-0">
+                    <div className="aspect-[16/10] overflow-hidden">
+                      <img
+                        src="/lovable-uploads/c3e6a692-a1dd-4bce-9615-a5fafb0c829c.png"
+                        alt="Front Elevation of Sri Shivalayam Temple and Sri Gangadevi Temple"
+                        className="w-full h-full object-contain bg-gradient-to-br from-orange-50 to-blue-50 hover:scale-105 transition-transform cursor-pointer"
+                        onClick={() => window.open("/lovable-uploads/c3e6a692-a1dd-4bce-9615-a5fafb0c829c.png", '_blank')}
+                      />
+                    </div>
+                  </CardContent>
+                </Card>
+                <Card className="border-none shadow-lg overflow-hidden">
+                  <CardContent className="p-0">
+                    <div className="aspect-[16/10] overflow-hidden">
+                      <img
+                        src="/lovable-uploads/a545d56a-335c-4092-b8e3-f91c35bfb113.png"
+                        alt="Complete Front Elevation View of Both Temples"
+                        className="w-full h-full object-contain bg-gradient-to-br from-orange-50 to-blue-50 hover:scale-105 transition-transform cursor-pointer"
+                        onClick={() => window.open("/lovable-uploads/a545d56a-335c-4092-b8e3-f91c35bfb113.png", '_blank')}
+                      />
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+              <div className="mt-6 text-center">
+                <p className="text-gray-600">
+                  Click on images to view in full size | Detailed architectural vision of our sacred temple complex
+                </p>
+              </div>
+            </CardContent>
+          </Card>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start mb-16">
@@ -118,7 +188,7 @@ const AboutSection = () => {
             </Card>
           </div>
 
-          {/* Temple Information Gallery */}
+          {/* Temple Project Details Gallery */}
           <div className="lg:sticky lg:top-8">
             <Card className="shadow-xl border-t-4 border-gradient-to-r from-orange-400 to-red-500">
               <CardHeader>
@@ -126,13 +196,13 @@ const AboutSection = () => {
                   Temple Project Details
                 </CardTitle>
                 <CardDescription className="text-center text-gray-600">
-                  Scroll through our detailed temple plans, costs, and certifications
+                  Detailed architectural plans and project information
                 </CardDescription>
               </CardHeader>
               <CardContent className="p-2">
                 <Carousel className="w-full">
                   <CarouselContent>
-                    {templeImages.map((image, index) => (
+                    {architecturalPlans.map((image, index) => (
                       <CarouselItem key={index}>
                         <div className="p-2">
                           <Card className="border-none shadow-lg">
@@ -141,7 +211,8 @@ const AboutSection = () => {
                                 <img
                                   src={image.src}
                                   alt={image.alt}
-                                  className="w-full h-full object-contain bg-gradient-to-br from-orange-50 to-blue-50"
+                                  className="w-full h-full object-contain bg-gradient-to-br from-orange-50 to-blue-50 hover:scale-105 transition-transform cursor-pointer"
+                                  onClick={() => window.open(image.src, '_blank')}
                                 />
                               </div>
                             </CardContent>
@@ -156,7 +227,7 @@ const AboutSection = () => {
                 
                 <div className="mt-4 text-center">
                   <p className="text-sm text-gray-600">
-                    Swipe or use arrows to view detailed information about our temple project
+                    Swipe or use arrows to view detailed architectural plans
                   </p>
                 </div>
               </CardContent>
@@ -164,15 +235,15 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* Full Width Temple Project Details Gallery */}
+        {/* Complete Temple Architectural Plans */}
         <div className="mb-16">
           <Card className="shadow-xl border-t-4 border-gradient-to-r from-orange-400 to-red-500">
             <CardHeader className="text-center">
               <CardTitle className="text-3xl bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
-                Complete Temple Project Information
+                Complete Temple Architectural Plans
               </CardTitle>
               <CardDescription className="text-lg text-gray-600">
-                Detailed documentation of our temple construction plans, costs, and certifications
+                Comprehensive architectural documentation and project information
               </CardDescription>
             </CardHeader>
             <CardContent className="p-6">
