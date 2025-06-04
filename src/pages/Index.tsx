@@ -174,7 +174,7 @@ const Index = () => {
                 </a>
               </div>
               <p className="text-sm text-gray-400">
-                Registered Trust | PAN: XXXXX | 80G Certified | ISO Certified | DARPAN Listed
+                Registered Trust | PAN: ABJTS0488E | 80G Certified | ISO Certified | DARPAN Listed
               </p>
             </div>
           </div>
