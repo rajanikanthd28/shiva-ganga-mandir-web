@@ -62,6 +62,7 @@ const HeroSection = () => {
             className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
           >
             🙏 Donate Now
+             onClick={() => window.open('https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?saralID=-912815721', '_blank')}
           </Button>
           <Button 
             variant="outline" 
