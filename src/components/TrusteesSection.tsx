@@ -7,21 +7,21 @@ const TrusteesSection = () => {
     {
       name: "Chairman & Founder Trustee",
       role: "Spiritual Leader & Engineer",
-      image: "/svgbt-uploads/d3f059c1-7b5c-4b80-af41-3c6a2ccc5c02.png",
+      image: "/lovable-uploads/d3f059c1-7b5c-4b80-af41-3c6a2ccc5c02.png",
       description: "A devoted spiritual guide with over 25 years of dedicated service to Sanatana Dharma. As a Computer Science Engineer turned spiritual mentor, he has played a pivotal role in spreading Hindu values and Vedic knowledge, especially among the youth.",
       background: "His unwavering commitment to preserving ancient traditions and uplifting the community is the driving force behind the establishment of the Shri Vishwanatha Gangabhavani Trust."
     },
     {
       name: "Shri K. Narsimloo",
       role: "Secretary & Trustee",
-      image: "/svgbt-uploads/044e6b0f-8d7b-4b21-86da-c93cb2e574b6.png", 
+      image: "/lovable-uploads/044e6b0f-8d7b-4b21-86da-c93cb2e574b6.png", 
       description: "An accomplished educator and social worker with more than 20 years of experience in the education sector. Shri Narsimloo is deeply passionate about preserving Indian culture through spiritual education.",
       background: "His leadership ensures that the Trust's activities remain rooted in dharma and focused on community upliftment."
     },
     {
       name: "Shri K. Narayana",
       role: "Treasurer & Trustee",
-      image: "/svgbt-uploads/d5b836b6-0608-41d0-8790-93d6de668828.png",
+      image: "/lovable-uploads/d5b836b6-0608-41d0-8790-93d6de668828.png",
       description: "A former Government employee with strong expertise in financial management and transparent governance. Shri Narayana plays a crucial role in ensuring that all donations are utilized effectively and responsibly for the temple's construction.",
       background: "His integrity and accountability make him a pillar of the Trust's financial stewardship and associated charitable activities."
     }
@@ -30,27 +30,27 @@ const TrusteesSection = () => {
   const otherMembers = [
     {
       name: "SHRI K YADAGIRI S/o LATE K RAJAIAH",
-      image: "/svgbt-uploads/171d53e0-8fda-4572-8522-36ee86384094.png"
+      image: "/lovable-uploads/171d53e0-8fda-4572-8522-36ee86384094.png"
     },
     {
       name: "SHRI K YADAGIRI S/o LATE K BALAIAH",
-      image: "/svgbt-uploads/2f91e0e6-5750-47b0-8f0a-7e978e97b3bc.png"
+      image: "/lovable-uploads/2f91e0e6-5750-47b0-8f0a-7e978e97b3bc.png"
     },
     {
       name: "SHRI K SRINIVAS",
-      image: "/svgbt-uploads/a64a99be-a235-479f-9ba4-dadc4c4fc5ba.png"
+      image: "/lovable-uploads/a64a99be-a235-479f-9ba4-dadc4c4fc5ba.png"
     },
     {
       name: "SHRI D PRAKASH",
-      image: "/svgbt-uploads/077280d0-736c-47e4-b1bf-0d54a2bec4e1.png"
+      image: "/lovable-uploads/077280d0-736c-47e4-b1bf-0d54a2bec4e1.png"
     },
     {
       name: "SHRI D RAMESH",
-      image: "/svgbt-uploads/57d2af16-d09c-4343-bbeb-88b5c39f1a6d.png"
+      image: "/lovable-uploads/57d2af16-d09c-4343-bbeb-88b5c39f1a6d.png"
     },
     {
       name: "SHRI M MEGHANATH",
-      image: "/svgbt-uploads/bb9e16ce-1831-423a-8a7e-defc31bb30d3.png"
+      image: "/lovable-uploads/bb9e16ce-1831-423a-8a7e-defc31bb30d3.png"
     }
   ];
 
