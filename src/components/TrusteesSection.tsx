@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -6,33 +7,51 @@ const TrusteesSection = () => {
     {
       name: "Chairman & Founder Trustee",
       role: "Spiritual Leader & Engineer",
-      image: "/placeholder.svg",
+      image: "/svgbt-uploads/d3f059c1-7b5c-4b80-af41-3c6a2ccc5c02.png",
       description: "A devoted spiritual guide with over 25 years of dedicated service to Sanatana Dharma. As a Computer Science Engineer turned spiritual mentor, he has played a pivotal role in spreading Hindu values and Vedic knowledge, especially among the youth.",
       background: "His unwavering commitment to preserving ancient traditions and uplifting the community is the driving force behind the establishment of the Shri Vishwanatha Gangabhavani Trust."
     },
     {
       name: "Shri K. Narsimloo",
       role: "Secretary & Trustee",
-      image: "/placeholder.svg", 
+      image: "/svgbt-uploads/044e6b0f-8d7b-4b21-86da-c93cb2e574b6.png", 
       description: "An accomplished educator and social worker with more than 20 years of experience in the education sector. Shri Narsimloo is deeply passionate about preserving Indian culture through spiritual education.",
       background: "His leadership ensures that the Trust's activities remain rooted in dharma and focused on community upliftment."
     },
     {
       name: "Shri K. Narayana",
       role: "Treasurer & Trustee",
-      image: "/placeholder.svg",
+      image: "/svgbt-uploads/d5b836b6-0608-41d0-8790-93d6de668828.png",
       description: "A former Government employee with strong expertise in financial management and transparent governance. Shri Narayana plays a crucial role in ensuring that all donations are utilized effectively and responsibly for the temple's construction.",
       background: "His integrity and accountability make him a pillar of the Trust's financial stewardship and associated charitable activities."
     }
   ];
 
   const otherMembers = [
-    "SHRI K YADAGIRI S/o LATE K RAJAIAH",
-    "SHRI K YADAGIRI S/o LATE K BALAIAH", 
-    "SHRI K SRINIVAS",
-    "SHRI D PRAKASH",
-    "SHRI D RAMESH",
-    "SHRI M MEGHANATH"
+    {
+      name: "SHRI K YADAGIRI S/o LATE K RAJAIAH",
+      image: "/svgbt-uploads/171d53e0-8fda-4572-8522-36ee86384094.png"
+    },
+    {
+      name: "SHRI K YADAGIRI S/o LATE K BALAIAH",
+      image: "/svgbt-uploads/2f91e0e6-5750-47b0-8f0a-7e978e97b3bc.png"
+    },
+    {
+      name: "SHRI K SRINIVAS",
+      image: "/svgbt-uploads/a64a99be-a235-479f-9ba4-dadc4c4fc5ba.png"
+    },
+    {
+      name: "SHRI D PRAKASH",
+      image: "/svgbt-uploads/077280d0-736c-47e4-b1bf-0d54a2bec4e1.png"
+    },
+    {
+      name: "SHRI D RAMESH",
+      image: "/svgbt-uploads/57d2af16-d09c-4343-bbeb-88b5c39f1a6d.png"
+    },
+    {
+      name: "SHRI M MEGHANATH",
+      image: "/svgbt-uploads/bb9e16ce-1831-423a-8a7e-defc31bb30d3.png"
+    }
   ];
 
   return (
@@ -87,13 +106,21 @@ const TrusteesSection = () => {
           
           <Card className="shadow-lg bg-gradient-to-r from-blue-50 to-purple-50 border-none">
             <CardContent className="p-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {otherMembers.map((member, index) => (
-                  <div key={index} className="flex items-center space-x-3 p-3 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                    <div className="w-8 h-8 bg-gradient-to-r from-orange-400 to-red-500 rounded-full flex items-center justify-center flex-shrink-0">
-                      <span className="text-white text-sm font-bold">🙏</span>
+                  <div key={index} className="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 border-2 border-orange-400">
+                      <img 
+                        src={member.image} 
+                        alt={member.name}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjQiIGN5PSIyNCIgcj0iMjQiIGZpbGw9IiNGRkY1RjUiLz4KPGNpcmNsZSBjeD0iMjQiIGN5PSIxOSIgcj0iNyIgZmlsbD0iI0ZGNzg3NSIvPgo8cGF0aCBkPSJNMTIgMzlDMTIgMzMuMDM1MyAxNi4wMzUzIDI4IDIyIDI4SDI2QzMxLjk2NDcgMjggMzYgMzMuMDM1MyAzNiAzOVY0MkgxMlYzOVoiIGZpbGw9IiNGRjc4NzUiLz4KPC9zdmc+Cg==';
+                        }}
+                      />
                     </div>
-                    <span className="text-gray-700 font-medium text-sm">{member}</span>
+                    <span className="text-gray-700 font-medium text-sm">{member.name}</span>
                   </div>
                 ))}
               </div>
