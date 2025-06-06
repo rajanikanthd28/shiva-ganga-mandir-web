@@ -7,8 +7,7 @@ const EventsSection = () => {
     {
       title: "Projector Donation to Government School",
       date: "September 2024",
-      image: "/lovable-uploads/projector.png",
-     
+      image: "/placeholder.svg",
       description: "Donated state-of-the-art projectors to enhance digital learning in the local government school, benefiting 200+ students.",
       impact: "200+ students benefited",
       category: "Education"
