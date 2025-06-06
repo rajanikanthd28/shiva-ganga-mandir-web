@@ -13,14 +13,15 @@ const TrusteesSection = () => {
     {
       name: "Shri K. Narsimloo",
       role: "Secretary & Trustee",
-      image: "/lovable-uploads/f82bff9f-bf06-4cd3-872f-717e39c5fdac.png", 
+      image: "/lovable-uploads/49620fad-5c7c-41fc-a15d-f8d3f62d1a6e.png" 
       description: "An accomplished educator and social worker with more than 20 years of experience in the education sector. Shri Narsimloo is deeply passionate about preserving Indian culture through spiritual education.",
       background: "His leadership ensures that the Trust's activities remain rooted in dharma and focused on community upliftment."
     },
     {
       name: "Shri K. Narayana",
       role: "Treasurer & Trustee",
-      image: "/lovable-uploads/fd6152c4-0596-4cac-b311-93717968336e.png",
+      image: "/lovable-uploads/bf1eb32c-8522-4dc0-b443-a250a55a512b.png"
+      
       description: "A former Government employee with strong expertise in financial management and transparent governance. Shri Narayana plays a crucial role in ensuring that all donations are utilized effectively and responsibly for the temple's construction.",
       background: "His integrity and accountability make him a pillar of the Trust's financial stewardship and associated charitable activities."
     }
@@ -29,27 +30,32 @@ const TrusteesSection = () => {
   const otherMembers = [
     {
       name: "SHRI K YADAGIRI S/o LATE K RAJAIAH",
-      image: "/lovable-uploads/49620fad-5c7c-41fc-a15d-f8d3f62d1a6e.png"
+      image: "/lovable-uploads/33f2a857-a642-4fc5-b2b3-7258e02a56cf.png"
+     
     },
     {
       name: "SHRI K YADAGIRI S/o LATE K BALAIAH",
-      image: "/lovable-uploads/0c5fb56a-8ed2-4768-ae15-aeec327f61d9.png"
-    },
-    {
-      name: "SHRI K SRINIVAS",
       image: "/lovable-uploads/473538c1-98d1-4164-9a00-d8518473cbda.png"
     },
     {
+      name: "SHRI K SRINIVAS",
+      image: "/lovable-uploads/0c5fb56a-8ed2-4768-ae15-aeec327f61d9.png"
+      
+    },
+    {
       name: "SHRI D PRAKASH",
-      image: "/lovable-uploads/33f2a857-a642-4fc5-b2b3-7258e02a56cf.png"
+      image: "/lovable-uploads/fd6152c4-0596-4cac-b311-93717968336e.png",
+      
     },
     {
       name: "SHRI D RAMESH",
-      image: "/lovable-uploads/5903d444-8ae4-4ac4-bfe5-470db5a03d4e.png"
+      
+      image: "/lovable-uploads/f82bff9f-bf06-4cd3-872f-717e39c5fdac.png",
     },
     {
       name: "SHRI M MEGHANATH",
-      image: "/lovable-uploads/bf1eb32c-8522-4dc0-b443-a250a55a512b.png"
+      image: "/lovable-uploads/5903d444-8ae4-4ac4-bfe5-470db5a03d4e.png"
+      
     }
   ];
 
