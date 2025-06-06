@@ -13,14 +13,14 @@ const TrusteesSection = () => {
     {
       name: "Shri K. Narsimloo",
       role: "Secretary & Trustee",
-      image: "/lovable-uploads/49620fad-5c7c-41fc-a15d-f8d3f62d1a6e.png" 
+      image: "/lovable-uploads/49620fad-5c7c-41fc-a15d-f8d3f62d1a6e.png", 
       description: "An accomplished educator and social worker with more than 20 years of experience in the education sector. Shri Narsimloo is deeply passionate about preserving Indian culture through spiritual education.",
       background: "His leadership ensures that the Trust's activities remain rooted in dharma and focused on community upliftment."
     },
     {
       name: "Shri K. Narayana",
       role: "Treasurer & Trustee",
-      image: "/lovable-uploads/bf1eb32c-8522-4dc0-b443-a250a55a512b.png"
+      image: "/lovable-uploads/bf1eb32c-8522-4dc0-b443-a250a55a512b.png",
       description: "A former Government employee with strong expertise in financial management and transparent governance. Shri Narayana plays a crucial role in ensuring that all donations are utilized effectively and responsibly for the temple's construction.",
       background: "His integrity and accountability make him a pillar of the Trust's financial stewardship and associated charitable activities."
     }
@@ -41,12 +41,11 @@ const TrusteesSection = () => {
     },
     {
       name: "SHRI D PRAKASH",
-      image: "/lovable-uploads/fd6152c4-0596-4cac-b311-93717968336e.png",
+      image: "/lovable-uploads/fd6152c4-0596-4cac-b311-93717968336e.png"
     },
     {
       name: "SHRI D RAMESH",
-      
-      image: "/lovable-uploads/f82bff9f-bf06-4cd3-872f-717e39c5fdac.png",
+      image: "/lovable-uploads/f82bff9f-bf06-4cd3-872f-717e39c5fdac.png"
     },
     {
       name: "SHRI M MEGHANATH",
