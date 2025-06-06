@@ -21,7 +21,6 @@ const TrusteesSection = () => {
       name: "Shri K. Narayana",
       role: "Treasurer & Trustee",
       image: "/lovable-uploads/bf1eb32c-8522-4dc0-b443-a250a55a512b.png"
-      
       description: "A former Government employee with strong expertise in financial management and transparent governance. Shri Narayana plays a crucial role in ensuring that all donations are utilized effectively and responsibly for the temple's construction.",
       background: "His integrity and accountability make him a pillar of the Trust's financial stewardship and associated charitable activities."
     }
@@ -31,7 +30,6 @@ const TrusteesSection = () => {
     {
       name: "SHRI K YADAGIRI S/o LATE K RAJAIAH",
       image: "/lovable-uploads/33f2a857-a642-4fc5-b2b3-7258e02a56cf.png"
-     
     },
     {
       name: "SHRI K YADAGIRI S/o LATE K BALAIAH",
@@ -40,12 +38,10 @@ const TrusteesSection = () => {
     {
       name: "SHRI K SRINIVAS",
       image: "/lovable-uploads/0c5fb56a-8ed2-4768-ae15-aeec327f61d9.png"
-      
     },
     {
       name: "SHRI D PRAKASH",
       image: "/lovable-uploads/fd6152c4-0596-4cac-b311-93717968336e.png",
-      
     },
     {
       name: "SHRI D RAMESH",
