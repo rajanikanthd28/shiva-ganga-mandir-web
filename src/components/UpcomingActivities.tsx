@@ -12,7 +12,7 @@ const UpcomingActivities = () => {
       description: "Sacred fire ritual and ceremonial bathing of Shiva Lingam with milk, honey, and holy water.",
       venue: "Temple Construction Site",
       highlights: ["Vedic Chanting", "Sacred Fire Ceremony", "Prasadam Distribution"],
-      status: "Confirmed"
+      status: "Completed"
     },
     {
       title: "Fundraising Drive for Temple Completion",
@@ -39,7 +39,7 @@ const UpcomingActivities = () => {
       description: "Special midnight prayers and blessings to welcome the new year with divine grace and positive energy.",
       venue: "Temple Premises",
       highlights: ["Midnight Prayers", "Special Abhishekam", "Community Celebration"],
-      status: "Planned"
+      status: "Completed"
     },
     {
       title: "Youth Spiritual Workshop",
