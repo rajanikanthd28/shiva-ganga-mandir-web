@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -7,66 +6,66 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 const AboutSection = () => {
   const templeImages = [
     {
-      src: "/lovable-uploads/6e0057b4-c948-4449-bd2c-83fc3e24fc6c.png",
+      src: "/svgbt-uploads/6e0057b4-c948-4449-bd2c-83fc3e24fc6c.png",
       alt: "Temple Project Banner - Shri Vishwanatha Gangabhavani Trust"
     },
     {
-      src: "/lovable-uploads/555ca018-628e-40c4-a384-4c0c8ac4a4c0.png", 
+      src: "/svgbt-uploads/555ca018-628e-40c4-a384-4c0c8ac4a4c0.png", 
       alt: "Temple History and Significance"
     },
     {
-      src: "/lovable-uploads/0c877f5a-0d26-45cb-8b65-539f1c7b1d11.png",
+      src: "/svgbt-uploads/0c877f5a-0d26-45cb-8b65-539f1c7b1d11.png",
       alt: "Temple Deities and Sacred Items"
     },
     {
-      src: "/lovable-uploads/e7cff029-b9f8-40ce-b33d-736f27cb15b3.png",
+      src: "/svgbt-uploads/e7cff029-b9f8-40ce-b33d-736f27cb15b3.png",
       alt: "Temple Architecture Plans"
     },
     {
-      src: "/lovable-uploads/ad727908-1328-4646-bce5-aabcffe73f22.png",
+      src: "/svgbt-uploads/ad727908-1328-4646-bce5-aabcffe73f22.png",
       alt: "Temple Specifications and Features"
     },
     {
-      src: "/lovable-uploads/71b1a4a6-d1b0-42ed-a5a7-3b57de5c1267.png",
+      src: "/svgbt-uploads/71b1a4a6-d1b0-42ed-a5a7-3b57de5c1267.png",
       alt: "Temple Construction Cost Breakdown"
     },
     {
-      src: "/lovable-uploads/248fb4e7-27fb-4d8c-9619-74333cd7fd89.png",
+      src: "/svgbt-uploads/248fb4e7-27fb-4d8c-9619-74333cd7fd89.png",
       alt: "Trust 80G Tax Exemption Certificate"
     },
     {
-      src: "/lovable-uploads/50541aad-bc2c-4ea6-b110-777015e3a40b.png",
+      src: "/svgbt-uploads/50541aad-bc2c-4ea6-b110-777015e3a40b.png",
       alt: "ISO 9001:2015 Certificate and NGO Registration"
     },
     {
-      src: "/lovable-uploads/b34baa60-dd82-46ef-ad5d-22dbf856b425.png",
+      src: "/svgbt-uploads/b34baa60-dd82-46ef-ad5d-22dbf856b425.png",
       alt: "Online Donations and Bank Account Details"
     },
     {
-      src: "/lovable-uploads/563b292c-e016-4274-a31b-6d16b708d0d6.png",
+      src: "/svgbt-uploads/563b292c-e016-4274-a31b-6d16b708d0d6.png",
       alt: "Donation Benefits and Tax Exemption Information"
     }
   ];
 
   const architecturalPlans = [
     {
-      src: "/lovable-uploads/6ce0059a-1919-4f09-a507-5b5325bc6f70.png",
+      src: "/svgbt-uploads/6ce0059a-1919-4f09-a507-5b5325bc6f70.png",
       alt: "Sri Gangadevi Ammavaru Temple and Sri Shivalayam Temple Ground Plan, Side Elevation and Section Views"
     },
     {
-      src: "/lovable-uploads/c3e6a692-a1dd-4bce-9615-a5fafb0c829c.png",
+      src: "/svgbt-uploads/c3e6a692-a1dd-4bce-9615-a5fafb0c829c.png",
       alt: "Front Elevation of Sri Shivalayam Temple and Sri Gangadevi Temple"
     },
     {
-      src: "/lovable-uploads/ff0285ec-dc7d-4121-ac70-d858e4890f52.png",
+      src: "/svgbt-uploads/ff0285ec-dc7d-4121-ac70-d858e4890f52.png",
       alt: "Side Elevation of Sri Gangadevi Temple"
     },
     {
-      src: "/lovable-uploads/13c469c3-c176-4ca7-9698-4272f1014658.png",
+      src: "/svgbt-uploads/13c469c3-c176-4ca7-9698-4272f1014658.png",
       alt: "Side Elevation of Sri Shivalayam Temple"
     },
     {
-      src: "/lovable-uploads/a545d56a-335c-4092-b8e3-f91c35bfb113.png",
+      src: "/svgbt-uploads/a545d56a-335c-4092-b8e3-f91c35bfb113.png",
       alt: "Complete Front Elevation View of Both Temples"
     }
   ];
@@ -96,10 +95,10 @@ const AboutSection = () => {
                   <CardContent className="p-0">
                     <div className="aspect-[16/10] overflow-hidden">
                       <img
-                        src="/lovable-uploads/c3e6a692-a1dd-4bce-9615-a5fafb0c829c.png"
+                        src="/svgbt-uploads/c3e6a692-a1dd-4bce-9615-a5fafb0c829c.png"
                         alt="Front Elevation of Sri Shivalayam Temple and Sri Gangadevi Temple"
                         className="w-full h-full object-contain bg-gradient-to-br from-orange-50 to-blue-50 hover:scale-105 transition-transform cursor-pointer"
-                        onClick={() => window.open("/lovable-uploads/c3e6a692-a1dd-4bce-9615-a5fafb0c829c.png", '_blank')}
+                        onClick={() => window.open("/svgbt-uploads/c3e6a692-a1dd-4bce-9615-a5fafb0c829c.png", '_blank')}
                       />
                     </div>
                   </CardContent>
@@ -108,10 +107,10 @@ const AboutSection = () => {
                   <CardContent className="p-0">
                     <div className="aspect-[16/10] overflow-hidden">
                       <img
-                        src="/lovable-uploads/a545d56a-335c-4092-b8e3-f91c35bfb113.png"
+                        src="/svgbt-uploads/a545d56a-335c-4092-b8e3-f91c35bfb113.png"
                         alt="Complete Front Elevation View of Both Temples"
                         className="w-full h-full object-contain bg-gradient-to-br from-orange-50 to-blue-50 hover:scale-105 transition-transform cursor-pointer"
-                        onClick={() => window.open("/lovable-uploads/a545d56a-335c-4092-b8e3-f91c35bfb113.png", '_blank')}
+                        onClick={() => window.open("/svgbt-uploads/a545d56a-335c-4092-b8e3-f91c35bfb113.png", '_blank')}
                       />
                     </div>
                   </CardContent>

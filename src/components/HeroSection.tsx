@@ -21,7 +21,7 @@ const HeroSection = () => {
         <div className="mb-8">
           <div className="w-32 h-32 mx-auto mb-6 flex items-center justify-center shadow-2xl rounded-full bg-white/10 backdrop-blur-sm">
             <img 
-              src="/lovable-uploads/49347fb5-abda-4bb8-bfc2-c59ea928bf79.png" 
+              src="/svgbt-uploads/49347fb5-abda-4bb8-bfc2-c59ea928bf79.png" 
               alt="Shri Vishwanatha Gangabhavani Trust Logo" 
               className="w-28 h-28 object-contain"
             />

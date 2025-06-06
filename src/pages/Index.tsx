@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -21,7 +20,7 @@ const Index = () => {
             <div className="flex items-center space-x-3">
               <div className="w-16 h-16 flex items-center justify-center">
                 <img 
-                  src="/lovable-uploads/49347fb5-abda-4bb8-bfc2-c59ea928bf79.png" 
+                  src="/svgbt-uploads/49347fb5-abda-4bb8-bfc2-c59ea928bf79.png" 
                   alt="Shri Vishwanatha Gangabhavani Trust Logo" 
                   className="w-full h-full object-contain"
                 />
@@ -134,7 +133,7 @@ const Index = () => {
               <div className="flex items-center space-x-3 mb-4">
                 <div className="w-12 h-12 flex items-center justify-center">
                   <img 
-                    src="/lovable-uploads/49347fb5-abda-4bb8-bfc2-c59ea928bf79.png" 
+                    src="/svgbt-uploads/49347fb5-abda-4bb8-bfc2-c59ea928bf79.png" 
                     alt="Shri Vishwanatha Gangabhavani Trust Logo" 
                     className="w-full h-full object-contain"
                   />
