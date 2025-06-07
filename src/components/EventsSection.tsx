@@ -1,13 +1,23 @@
 
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const EventsSection = () => {
+  const projectorImages = [
+    "/lovable-uploads/IMG_9857.png",
+    "/lovable-uploads/bb45e637-dd00-43e4-a210-83b5e6f98dd6.png",
+    "/lovable-uploads/f2a16f62-e2c9-4566-a623-5945f7bba03c.png",
+    "/lovable-uploads/26ea8568-eced-4260-b253-21cc73f95937.png",
+    "/lovable-uploads/854daba4-cc25-41b4-8aec-3045e2aea178.png",
+    "/lovable-uploads/d861c08a-8946-461e-b5de-6ec598922311.png"
+  ];
+
   const events = [
     {
       title: "Projector Donation to Government School",
       date: "September 2024",
-      "/lovable-uploads/IMG_9857.png",
+      images: projectorImages,
       description: "Donated state-of-the-art projectors to enhance digital learning in the local government school, benefiting 200+ students.",
       impact: "200+ students benefited",
       category: "Education"
@@ -82,15 +92,37 @@ const EventsSection = () => {
           {events.map((event, index) => (
             <Card key={index} className="shadow-lg hover:shadow-xl transition-all transform hover:scale-105 overflow-hidden">
               <div className="relative h-48 bg-gradient-to-br from-orange-100 to-blue-100">
-                <img 
-                  src={event.image} 
-                  alt={event.title}
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.style.display = 'none';
-                  }}
-                />
+                {event.images ? (
+                  <Carousel className="w-full h-full">
+                    <CarouselContent>
+                      {event.images.map((image, imgIndex) => (
+                        <CarouselItem key={imgIndex}>
+                          <img 
+                            src={image} 
+                            alt={`${event.title} - Image ${imgIndex + 1}`}
+                            className="w-full h-48 object-cover"
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              target.style.display = 'none';
+                            }}
+                          />
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    <CarouselPrevious className="left-2" />
+                    <CarouselNext className="right-2" />
+                  </Carousel>
+                ) : (
+                  <img 
+                    src={event.image} 
+                    alt={event.title}
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                    }}
+                  />
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute top-4 right-4">
                   <span className={`px-3 py-1 rounded-full text-xs font-semibold ${getCategoryColor(event.category)}`}>
