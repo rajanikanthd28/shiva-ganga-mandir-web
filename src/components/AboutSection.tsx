@@ -2,7 +2,6 @@ import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   const templeImages = [
@@ -235,7 +234,7 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* Complete Temple Architectural Plans - Updated with link */}
+        {/* Complete Temple Architectural Plans */}
         <div className="mb-16">
           <Card className="shadow-xl border-t-4 border-gradient-to-r from-orange-400 to-red-500">
             <CardHeader className="text-center">
@@ -246,20 +245,36 @@ const AboutSection = () => {
                 Comprehensive architectural documentation and project information
               </CardDescription>
             </CardHeader>
-            <CardContent className="p-6 text-center">
-              <p className="text-gray-600 mb-6">
-                View detailed architectural plans, project specifications, and comprehensive documentation in our dedicated gallery.
-              </p>
+            <CardContent className="p-6">
+              <Carousel className="w-full">
+                <CarouselContent>
+                  {templeImages.map((image, index) => (
+                    <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                      <div className="p-2">
+                        <Card className="border-none shadow-lg">
+                          <CardContent className="p-0">
+                            <div className="aspect-[4/3] overflow-hidden rounded-lg">
+                              <img
+                                src={image.src}
+                                alt={image.alt}
+                                className="w-full h-full object-contain bg-gradient-to-br from-orange-50 to-blue-50 hover:scale-105 transition-transform cursor-pointer"
+                                onClick={() => window.open(image.src, '_blank')}
+                              />
+                            </div>
+                          </CardContent>
+                        </Card>
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious className="left-4" />
+                <CarouselNext className="right-4" />
+              </Carousel>
               
-              <Link 
-                to="/temple-plans"
-                className="inline-block bg-gradient-to-r from-orange-500 to-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-orange-600 hover:to-red-700 transition-all transform hover:scale-105 shadow-lg"
-              >
-                🏛️ View Complete Architectural Plans
-              </Link>
-              
-              <div className="mt-6 text-sm text-gray-500">
-                Full-page gallery with detailed project information and high-resolution images
+              <div className="mt-6 text-center">
+                <p className="text-gray-600">
+                  Click on any image to view in full size | Swipe or use arrows to navigate through all project details
+                </p>
               </div>
             </CardContent>
           </Card>
