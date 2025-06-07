@@ -93,10 +93,16 @@ const EventsSection = () => {
             <Card key={index} className="shadow-lg hover:shadow-xl transition-all transform hover:scale-105 overflow-hidden">
               <div className="relative h-48 bg-gradient-to-br from-orange-100 to-blue-100">
                 {event.images ? (
-                  <Carousel className="w-full h-full">
-                    <CarouselContent>
+                  <Carousel 
+                    className="w-full h-full"
+                    opts={{
+                      align: "start",
+                      loop: true,
+                    }}
+                  >
+                    <CarouselContent className="h-full">
                       {event.images.map((image, imgIndex) => (
-                        <CarouselItem key={imgIndex}>
+                        <CarouselItem key={imgIndex} className="h-full">
                           <img 
                             src={image} 
                             alt={`${event.title} - Image ${imgIndex + 1}`}
@@ -109,8 +115,8 @@ const EventsSection = () => {
                         </CarouselItem>
                       ))}
                     </CarouselContent>
-                    <CarouselPrevious className="left-2" />
-                    <CarouselNext className="right-2" />
+                    <CarouselPrevious className="left-2 bg-white/80 hover:bg-white" />
+                    <CarouselNext className="right-2 bg-white/80 hover:bg-white" />
                   </Carousel>
                 ) : (
                   <img 
