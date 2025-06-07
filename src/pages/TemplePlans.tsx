@@ -1,15 +1,11 @@
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const TemplePlans = () => {
-  const [api, setApi] = useState<CarouselApi>();
-  const [current, setCurrent] = useState(0);
-  const [count, setCount] = useState(0);
-
   const templeImages = [
     {
       src: "/lovable-uploads/6e0057b4-c948-4449-bd2c-83fc3e24fc6c.png",
@@ -52,19 +48,6 @@ const TemplePlans = () => {
       alt: "Donation Benefits and Tax Exemption Information"
     }
   ];
-
-  useEffect(() => {
-    if (!api) {
-      return;
-    }
-
-    setCount(api.scrollSnapList().length);
-    setCurrent(api.selectedScrollSnap() + 1);
-
-    api.on("select", () => {
-      setCurrent(api.selectedScrollSnap() + 1);
-    });
-  }, [api]);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-50 to-blue-50">
@@ -109,7 +92,7 @@ const TemplePlans = () => {
           {/* Full Page Carousel */}
           <Card className="shadow-2xl border-t-4 border-gradient-to-r from-orange-400 to-red-500">
             <CardContent className="p-0">
-              <Carousel className="w-full" setApi={setApi}>
+              <Carousel className="w-full">
                 <CarouselContent>
                   {templeImages.map((image, index) => (
                     <CarouselItem key={index}>
@@ -130,8 +113,8 @@ const TemplePlans = () => {
                     </CarouselItem>
                   ))}
                 </CarouselContent>
-                {current > 1 && <CarouselPrevious className="left-4 w-12 h-12" />}
-                {current < count && <CarouselNext className="right-4 w-12 h-12" />}
+                <CarouselPrevious className="left-4 w-12 h-12" />
+                <CarouselNext className="right-4 w-12 h-12" />
               </Carousel>
             </CardContent>
           </Card>
