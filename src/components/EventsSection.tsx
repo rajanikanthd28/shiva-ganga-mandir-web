@@ -1,9 +1,12 @@
-
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from "@/components/ui/carousel";
 
 const EventsSection = () => {
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+  const [count, setCount] = useState(0);
+
   const projectorImages = [
     "/lovable-uploads/IMG_9857.png",
     "/lovable-uploads/bb45e637-dd00-43e4-a210-83b5e6f98dd6.png",
@@ -64,6 +67,19 @@ const EventsSection = () => {
     }
   ];
 
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap() + 1);
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1);
+    });
+  }, [api]);
+
   const getCategoryColor = (category: string) => {
     const colors = {
       Education: "bg-blue-100 text-blue-800",
@@ -95,6 +111,7 @@ const EventsSection = () => {
                 {event.images ? (
                   <Carousel 
                     className="w-full h-full"
+                    setApi={index === 0 ? setApi : undefined}
                     opts={{
                       align: "start",
                       loop: true,
