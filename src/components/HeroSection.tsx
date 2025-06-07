@@ -1,11 +1,7 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { useLanguage } from "@/contexts/LanguageContext";
 
 const HeroSection = () => {
-  const { t } = useLanguage();
-
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with spiritual imagery */}
@@ -32,11 +28,11 @@ const HeroSection = () => {
           
           <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
             <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
-              {t('hero.title1')}
+              Shri Vishwanatha
             </span>
             <br />
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              {t('hero.title2')}
+              Gangabhavani Trust
             </span>
           </h1>
         </div>
@@ -44,7 +40,7 @@ const HeroSection = () => {
         {/* Inspirational Quote */}
         <div className="max-w-4xl mx-auto mb-8">
           <blockquote className="text-xl md:text-2xl text-gray-700 italic font-medium leading-relaxed">
-            "{t('hero.quote')}"
+            "He who offers water to Lord Shiva, receives the grace of Ganga and the strength of the universe."
           </blockquote>
           <div className="w-16 h-1 bg-gradient-to-r from-orange-400 to-red-500 mx-auto mt-4 rounded-full"></div>
         </div>
@@ -52,7 +48,9 @@ const HeroSection = () => {
         {/* Mission Statement */}
         <div className="max-w-3xl mx-auto mb-10">
           <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-            {t('hero.mission')}
+            Join us in building a sacred abode for <strong className="text-orange-600">Shri Vishwanatha</strong> and 
+            <strong className="text-blue-600"> Gangabhavani</strong> — a center of dharma, devotion, and cultural revival 
+            in Talamadla village, Telangana.
           </p>
         </div>
 
@@ -63,14 +61,15 @@ const HeroSection = () => {
             className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
              onClick={() => window.open('https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?saralID=-912815721', '_blank')}
             >
-            {t('hero.donateBtn')}
+            🙏 Donate Now
+             
           </Button>
           <Button 
             variant="outline" 
             size="lg" 
             className="border-2 border-blue-500 text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
           >
-            {t('hero.eventsBtn')}
+            📅 View Events
           </Button>
         </div>
 
