@@ -4,8 +4,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from "@/components/ui/carousel";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/contexts/LanguageContext";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const TemplePlans = () => {
+  const { t } = useLanguage();
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
@@ -74,20 +77,23 @@ const TemplePlans = () => {
           <div className="flex justify-between items-center py-4">
             <Link to="/" className="flex items-center space-x-3">
               <ArrowLeft className="w-6 h-6 text-gray-600" />
-              <span className="text-gray-600 hover:text-orange-600">Back to Home</span>
+              <span className="text-gray-600 hover:text-orange-600">{t('templeplans.nav')}</span>
             </Link>
-            <div className="flex items-center space-x-3">
-              <div className="w-16 h-16 flex items-center justify-center">
-                <img 
-                  src="/lovable-uploads/49347fb5-abda-4bb8-bfc2-c59ea928bf79.png" 
-                  alt="Shri Vishwanatha Gangabhavani Trust Logo" 
-                  className="w-full h-full object-contain"
-                />
+            <div className="flex items-center space-x-6">
+              <div className="flex items-center space-x-3">
+                <div className="w-16 h-16 flex items-center justify-center">
+                  <img 
+                    src="/lovable-uploads/49347fb5-abda-4bb8-bfc2-c59ea928bf79.png" 
+                    alt="Shri Vishwanatha Gangabhavani Trust Logo" 
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <div>
+                  <h1 className="text-xl font-bold text-gray-800">{t('templeplans.title')}</h1>
+                  <p className="text-sm text-gray-600">Shri Vishwanatha Gangabhavani Trust</p>
+                </div>
               </div>
-              <div>
-                <h1 className="text-xl font-bold text-gray-800">Temple Architectural Plans</h1>
-                <p className="text-sm text-gray-600">Shri Vishwanatha Gangabhavani Trust</p>
-              </div>
+              <LanguageSwitcher />
             </div>
           </div>
         </div>
@@ -98,11 +104,11 @@ const TemplePlans = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-              Complete Temple Architectural Plans
+              {t('templeplans.title')}
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-orange-400 to-red-500 mx-auto rounded-full"></div>
             <p className="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">
-              Comprehensive architectural documentation and project information for our sacred temple complex
+              {t('templeplans.subtitle')}
             </p>
           </div>
 
@@ -138,14 +144,14 @@ const TemplePlans = () => {
 
           <div className="mt-8 text-center">
             <p className="text-gray-600 mb-4">
-              Click on any image to view in full size | Use arrows to navigate through all project details
+              {t('templeplans.click')}
             </p>
             <Link 
               to="/"
               className="inline-flex items-center space-x-2 bg-gradient-to-r from-orange-500 to-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-orange-600 hover:to-red-700 transition-all transform hover:scale-105"
             >
               <ArrowLeft className="w-5 h-5" />
-              <span>Return to Home</span>
+              <span>{t('templeplans.return')}</span>
             </Link>
           </div>
         </div>

@@ -1,8 +1,11 @@
+
 import React, { useState, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from "@/components/ui/carousel";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const EventsSection = () => {
+  const { t } = useLanguage();
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
@@ -18,52 +21,52 @@ const EventsSection = () => {
 
   const events = [
     {
-      title: "Projector Donation to Government School",
-      date: "September 2024",
+      title: t('events.projector.title'),
+      date: t('date.september2024'),
       images: projectorImages,
-      description: "Donated state-of-the-art projectors to enhance digital learning in the local government school, benefiting 200+ students.",
-      impact: "200+ students benefited",
-      category: "Education"
+      description: t('events.projector.desc'),
+      impact: t('events.projector.impact'),
+      category: t('category.education')
     },
     {
-      title: "Bhagavad Gita Competition",
-      date: "August 2024", 
+      title: t('events.bgcompetition.title'),
+      date: t('date.august2024'), 
       image: "/placeholder.svg",
-      description: "Organized a spiritual knowledge competition for youth, promoting understanding of sacred scriptures and dharmic values.",
-      impact: "150+ participants",
-      category: "Spiritual"
+      description: t('events.bgcompetition.desc'),
+      impact: t('events.bgcompetition.impact'),
+      category: t('category.spiritual')
     },
     {
-      title: "Lord Shiva Kalyanam Celebration",
-      date: "July 2024",
+      title: t('events.kalyanam.title'),
+      date: t('date.july2024'),
       image: "/placeholder.svg", 
-      description: "Grand celebration of Lord Shiva's divine marriage with elaborate rituals, bringing together devotees from across the region.",
-      impact: "500+ devotees attended",
-      category: "Festival"
+      description: t('events.kalyanam.desc'),
+      impact: t('events.kalyanam.impact'),
+      category: t('category.festival')
     },
     {
-      title: "Temple Basement Construction",
-      date: "Ongoing",
+      title: t('events.construction.title'),
+      date: t('date.ongoing'),
       image: "/placeholder.svg",
-      description: "Major milestone achieved with completion of the temple's foundation and basement structure, marking significant progress.",
-      impact: "Foundation completed",
-      category: "Construction"
+      description: t('events.construction.desc'),
+      impact: t('events.construction.impact'),
+      category: t('category.construction')
     },
     {
-      title: "Community Health Camp",
-      date: "June 2024",
+      title: t('events.health.title'),
+      date: t('date.june2024'),
       image: "/placeholder.svg",
-      description: "Free medical checkups and health awareness programs conducted for the local community in partnership with healthcare professionals.",
-      impact: "300+ people served",
-      category: "Health"
+      description: t('events.health.desc'),
+      impact: t('events.health.impact'),
+      category: t('category.health')
     },
     {
-      title: "Annadanam Program",
-      date: "Monthly",
+      title: t('events.annadanam.title'),
+      date: t('date.monthly'),
       image: "/placeholder.svg",
-      description: "Regular free meal distribution program serving nutritious food to devotees and the underprivileged community members.",
-      impact: "1000+ meals monthly",
-      category: "Service"
+      description: t('events.annadanam.desc'),
+      impact: t('events.annadanam.impact'),
+      category: t('category.service')
     }
   ];
 
@@ -82,25 +85,24 @@ const EventsSection = () => {
 
   const getCategoryColor = (category: string) => {
     const colors = {
-      Education: "bg-blue-100 text-blue-800",
-      Spiritual: "bg-orange-100 text-orange-800", 
-      Festival: "bg-purple-100 text-purple-800",
-      Construction: "bg-green-100 text-green-800",
-      Health: "bg-red-100 text-red-800",
-      Service: "bg-yellow-100 text-yellow-800"
+      [t('category.education')]: "bg-blue-100 text-blue-800",
+      [t('category.spiritual')]: "bg-orange-100 text-orange-800", 
+      [t('category.festival')]: "bg-purple-100 text-purple-800",
+      [t('category.construction')]: "bg-green-100 text-green-800",
+      [t('category.health')]: "bg-red-100 text-red-800",
+      [t('category.service')]: "bg-yellow-100 text-yellow-800"
     };
-    return colors[category as keyof typeof colors] || "bg-gray-100 text-gray-800";
+    return colors[category] || "bg-gray-100 text-gray-800";
   };
 
   return (
     <section id="events" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Sacred Activities & Events</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">{t('events.title')}</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-orange-400 to-red-500 mx-auto rounded-full"></div>
           <p className="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">
-            Through devotion and service, we organize various spiritual, educational, and community welfare activities 
-            that strengthen our bond with the divine and serve humanity.
+            {t('events.subtitle')}
           </p>
         </div>
 
@@ -170,12 +172,12 @@ const EventsSection = () => {
                     <span className="text-sm font-semibold text-green-700">{event.impact}</span>
                   </div>
                   <div className="text-2xl">
-                    {event.category === 'Education' && '📚'}
-                    {event.category === 'Spiritual' && '🕉️'}
-                    {event.category === 'Festival' && '🎉'}
-                    {event.category === 'Construction' && '🏗️'}
-                    {event.category === 'Health' && '🏥'}
-                    {event.category === 'Service' && '🤝'}
+                    {event.category === t('category.education') && '📚'}
+                    {event.category === t('category.spiritual') && '🕉️'}
+                    {event.category === t('category.festival') && '🎉'}
+                    {event.category === t('category.construction') && '🏗️'}
+                    {event.category === t('category.health') && '🏥'}
+                    {event.category === t('category.service') && '🤝'}
                   </div>
                 </div>
               </CardContent>
@@ -186,23 +188,23 @@ const EventsSection = () => {
         <div className="mt-12 text-center">
           <Card className="max-w-4xl mx-auto shadow-lg bg-gradient-to-r from-orange-50 to-blue-50 border-t-4 border-orange-400">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Impact So Far</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">{t('events.impact.title')}</h3>
               <div className="grid md:grid-cols-4 gap-6">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-orange-600">2000+</div>
-                  <p className="text-gray-700">Devotees Served</p>
+                  <p className="text-gray-700">{t('events.impact.devotees')}</p>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-blue-600">15+</div>
-                  <p className="text-gray-700">Events Organized</p>
+                  <p className="text-gray-700">{t('events.impact.events')}</p>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-green-600">5000+</div>
-                  <p className="text-gray-700">Meals Distributed</p>
+                  <p className="text-gray-700">{t('events.impact.meals')}</p>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-purple-600">300+</div>
-                  <p className="text-gray-700">Students Supported</p>
+                  <p className="text-gray-700">{t('events.impact.students')}</p>
                 </div>
               </div>
             </CardContent>
