@@ -14,6 +14,14 @@ const EventsSection = () => {
   ];
 
   const events = [
+     {
+      title: "Temple Foundation Stone Laying",
+      date: "15th August 2024",
+      image: "/placeholder.svg",
+      description: "Auspicious ceremony for laying the foundation stone of the main temple structure with elaborate Vedic rituals.",
+      impact: "1000+ people attended",
+      category: "Festival"
+    },
     {
       title: "Projector Donation to Government School",
       date: "September 2024",
@@ -21,6 +29,14 @@ const EventsSection = () => {
       description: "Donated state-of-the-art projectors to enhance digital learning in the local government school, benefiting 200+ students.",
       impact: "500+ students benefited",
       category: "Education"
+    },
+    {
+      title: "Temple Basement Construction",
+      date: "Completed",
+      image: "/placeholder.svg",
+      description: "Major milestone achieved with completion of the temple's foundation and basement structure, marking significant progress.",
+      impact: "Foundation completed",
+      category: "Construction"
     },
     {
       title: "Shiva Homam and Abhishekam",
@@ -36,22 +52,6 @@ const EventsSection = () => {
       image: "/placeholder.svg", 
       description: "Grand celebration of Lord Shiva's divine marriage with elaborate rituals, bringing together devotees from across the region.",
       impact: "500+ devotees attended",
-      category: "Festival"
-    },
-    {
-      title: "Temple Basement Construction",
-      date: "Completed",
-      image: "/placeholder.svg",
-      description: "Major milestone achieved with completion of the temple's foundation and basement structure, marking significant progress.",
-      impact: "Foundation completed",
-      category: "Construction"
-    },
-    {
-      title: "Temple Foundation Stone Laying",
-      date: "15th August 2024",
-      image: "/placeholder.svg",
-      description: "Auspicious ceremony for laying the foundation stone of the main temple structure with elaborate Vedic rituals.",
-      impact: "1000+ people attended",
       category: "Festival"
     },
     {
