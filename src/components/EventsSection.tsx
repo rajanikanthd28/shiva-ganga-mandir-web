@@ -19,20 +19,20 @@ const EventsSection = () => {
       date: "September 2024",
       images: projectorImages,
       description: "Donated state-of-the-art projectors to enhance digital learning in the local government school, benefiting 200+ students.",
-      impact: "200+ students benefited",
+      impact: "500+ students benefited",
       category: "Education"
     },
     {
-      title: "Bhagavad Gita Competition",
-      date: "August 2024", 
+      title: "Shiva Homam and Abhishekam",
+      date: "November 2024", 
       image: "/placeholder.svg",
-      description: "Organized a spiritual knowledge competition for youth, promoting understanding of sacred scriptures and dharmic values.",
-      impact: "150+ participants",
+      description: "Organized a Sacred fire ritual and ceremonial bathing of Shiva Lingam with milk, honey, and holy water.",
+      impact: "500+ participants",
       category: "Spiritual"
     },
     {
       title: "Lord Shiva Kalyanam Celebration",
-      date: "July 2024",
+      date: "November 2024",
       image: "/placeholder.svg", 
       description: "Grand celebration of Lord Shiva's divine marriage with elaborate rituals, bringing together devotees from across the region.",
       impact: "500+ devotees attended",
@@ -40,19 +40,19 @@ const EventsSection = () => {
     },
     {
       title: "Temple Basement Construction",
-      date: "Ongoing",
+      date: "Completed",
       image: "/placeholder.svg",
       description: "Major milestone achieved with completion of the temple's foundation and basement structure, marking significant progress.",
       impact: "Foundation completed",
       category: "Construction"
     },
     {
-      title: "Community Health Camp",
-      date: "June 2024",
+      title: "Temple Foundation Stone Laying",
+      date: "15th August 2024",
       image: "/placeholder.svg",
-      description: "Free medical checkups and health awareness programs conducted for the local community in partnership with healthcare professionals.",
-      impact: "300+ people served",
-      category: "Health"
+      description: "Auspicious ceremony for laying the foundation stone of the main temple structure with elaborate Vedic rituals.",
+      impact: "1000+ people attended",
+      category: "Festival"
     },
     {
       title: "Annadanam Program",
