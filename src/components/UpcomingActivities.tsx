@@ -6,15 +6,6 @@ import { Calendar } from "lucide-react";
 const UpcomingActivities = () => {
   const upcomingEvents = [
     {
-      title: "Shiva Homam and Abhishekam",
-      date: "24 November 2024",
-      time: "6:00 AM - 12:00 PM",
-      description: "Sacred fire ritual and ceremonial bathing of Shiva Lingam with milk, honey, and holy water.",
-      venue: "Temple Construction Site",
-      highlights: ["Vedic Chanting", "Sacred Fire Ceremony", "Prasadam Distribution"],
-      status: "Completed"
-    },
-    {
       title: "Fundraising Drive for Temple Completion",
       date: "Ongoing",
       time: "All Day",
@@ -25,7 +16,7 @@ const UpcomingActivities = () => {
     },
     {
       title: "Ganga Aarti and Cultural Program",
-      date: "15 December 2024",
+      date: "15 August 2025",
       time: "7:00 PM - 9:00 PM", 
       description: "Evening aarti dedicated to Gangamatha with classical music, dance performances, and spiritual discourses.",
       venue: "Pedda Cheruvu, Talamadla",
@@ -33,17 +24,8 @@ const UpcomingActivities = () => {
       status: "Planning"
     },
     {
-      title: "New Year Blessing Ceremony",
-      date: "1 January 2025",
-      time: "12:00 AM - 2:00 AM",
-      description: "Special midnight prayers and blessings to welcome the new year with divine grace and positive energy.",
-      venue: "Temple Premises",
-      highlights: ["Midnight Prayers", "Special Abhishekam", "Community Celebration"],
-      status: "Completed"
-    },
-    {
       title: "Youth Spiritual Workshop",
-      date: "20 January 2025",
+      date: "20 August 2025",
       time: "10:00 AM - 4:00 PM",
       description: "Educational workshop for young devotees focusing on Hindu philosophy, meditation practices, and cultural values.",
       venue: "Community Hall",
@@ -51,10 +33,10 @@ const UpcomingActivities = () => {
       status: "Planned"
     },
     {
-      title: "Temple Foundation Stone Laying",
-      date: "February 2025",
+      title: "Temple Pillars construction Starting",
+      date: "August 2025",
       time: "TBA",
-      description: "Auspicious ceremony for laying the foundation stone of the main temple structure with elaborate Vedic rituals.",
+      description: "Auspicious ceremony for starting the foundation of pillars of the main temple structure with elaborate Vedic rituals.",
       venue: "Temple Site",
       highlights: ["Vedic Rituals", "Community Participation", "Historic Milestone"],
       status: "Scheduled"
