@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -9,6 +10,7 @@ import EventsSection from '../components/EventsSection';
 import UpcomingActivities from '../components/UpcomingActivities';
 import DonationSection from '../components/DonationSection';
 import ContactSection from '../components/ContactSection';
+import MobileNavigation from '../components/MobileNavigation';
 
 const Index = () => {
   return (
@@ -30,6 +32,8 @@ const Index = () => {
                 <p className="text-sm text-gray-600">Talamadla, Telangana</p>
               </div>
             </div>
+            
+            {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-6">
               <a href="#about" className="text-gray-700 hover:text-orange-600 transition-colors">About</a>
               <a href="#trustees" className="text-gray-700 hover:text-orange-600 transition-colors">Trustees</a>
@@ -37,6 +41,9 @@ const Index = () => {
               <a href="#donate" className="text-gray-700 hover:text-orange-600 transition-colors">Donate</a>
               <a href="#contact" className="text-gray-700 hover:text-orange-600 transition-colors">Contact</a>
             </div>
+
+            {/* Mobile Navigation */}
+            <MobileNavigation />
           </div>
         </div>
       </nav>
