@@ -13,11 +13,31 @@ const EventsSection = () => {
     "/lovable-uploads/d861c08a-8946-461e-b5de-6ec598922311.png"
   ];
 
+  const foundationImages = [
+    "/lovable-uploads/afe47ffe-dff2-43b8-933c-a53dc0265041.png"
+  ];
+
+  const constructionImages = [
+    "/lovable-uploads/aff109bc-8006-4c78-b49e-a2a4fd0403bd.png"
+  ];
+
+  const shivaHomamImages = [
+    "/lovable-uploads/3f2c5c56-8069-4194-8dfa-08a9af27b97d.png"
+  ];
+
+  const kalyanamImages = [
+    "/lovable-uploads/cb5f3962-c55f-4585-a8de-c6a397b60526.png"
+  ];
+
+  const annadanamImages = [
+    "/lovable-uploads/a37583e6-cad0-44b5-bd36-ad8f88fc22c2.png"
+  ];
+
   const events = [
      {
       title: "Temple Foundation Stone Laying",
       date: "15th August 2024",
-      image: "/placeholder.svg",
+      images: foundationImages,
       description: "Auspicious ceremony for laying the foundation stone of the main temple structure with elaborate Vedic rituals.",
       impact: "1000+ people attended",
       category: "Festival"
@@ -33,7 +53,7 @@ const EventsSection = () => {
     {
       title: "Temple Basement Construction",
       date: "Completed",
-      image: "/placeholder.svg",
+      images: constructionImages,
       description: "Major milestone achieved with completion of the temple's foundation and basement structure, marking significant progress.",
       impact: "Foundation completed",
       category: "Construction"
@@ -41,7 +61,7 @@ const EventsSection = () => {
     {
       title: "Shiva Homam and Abhishekam",
       date: "November 2024", 
-      image: "/placeholder.svg",
+      images: shivaHomamImages,
       description: "Organized a Sacred fire ritual and ceremonial bathing of Shiva Lingam with milk, honey, and holy water.",
       impact: "500+ participants",
       category: "Spiritual"
@@ -49,7 +69,7 @@ const EventsSection = () => {
     {
       title: "Lord Shiva Kalyanam Celebration",
       date: "November 2024",
-      image: "/placeholder.svg", 
+      images: kalyanamImages, 
       description: "Grand celebration of Lord Shiva's divine marriage with elaborate rituals, bringing together devotees from across the region.",
       impact: "500+ devotees attended",
       category: "Festival"
@@ -57,7 +77,7 @@ const EventsSection = () => {
     {
       title: "Annadanam Program",
       date: "Monthly",
-      image: "/placeholder.svg",
+      images: annadanamImages,
       description: "Regular free meal distribution program serving nutritious food to devotees and the underprivileged community members.",
       impact: "1000+ meals monthly",
       category: "Service"
@@ -114,7 +134,7 @@ const EventsSection = () => {
                   </Carousel>
                 ) : (
                   <img 
-                    src={event.image} 
+                    src="/placeholder.svg" 
                     alt={event.title}
                     className="w-full h-full object-cover"
                     onError={(e) => {
