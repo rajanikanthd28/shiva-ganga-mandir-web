@@ -32,7 +32,7 @@ const Index = () => {
                 />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-800">Shri Vishwanatha Gangabhavani Trust</h1>
+                <h1 className="text-xl font-bold text-gray-800">Shri Vishwanatha Gangabhavani Temple</h1>
                 <p className="text-sm text-gray-600">Talamadla, Telangana</p>
               </div>
             </div>
