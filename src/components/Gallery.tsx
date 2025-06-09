@@ -52,7 +52,7 @@ const Gallery = () => {
     {
       id: '6',
       src: '/lovable-uploads/5456ef70-efe3-47c1-a7e8-7ca0c08437a9.png',
-      alt: 'Temple Event',
+      alt: 'Meeting with Hon'ble MLA(Kamareddy) K Venkata Ramana Reddy',
       category: 'photos'
     }
   ];
