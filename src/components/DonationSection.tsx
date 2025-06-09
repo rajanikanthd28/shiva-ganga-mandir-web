@@ -57,7 +57,7 @@ const DonationSection = () => {
                         💳 Pay via SBI ePay Gateway
                       </Button>
                       <Button variant="outline" className="w-full border-2 border-orange-400 text-orange-600 hover:bg-orange-50 py-3 text-lg font-semibold">
-                        📱 UPI Payment
+                        📱 UPI ID: srivgbt@sbi
                       </Button>
                     </div>
                   </div>
