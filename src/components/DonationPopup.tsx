@@ -35,7 +35,7 @@ const DonationPopup = () => {
               filter: 'drop-shadow(0 0 15px rgba(251, 146, 60, 0.3))'
             }}>
               <img 
-                src="/lovable-uploads/49347fb5-abda-4bb8-bfc2-c59ea928bf79.png" 
+                src="/lovable-uploads/784db43f-2f0e-4884-8523-c5798db1254e.png" 
                 alt="Shri Vishwanatha Gangabhavani Trust Logo" 
                 className="w-full h-full object-contain"
               />
@@ -80,7 +80,7 @@ const DonationPopup = () => {
           {/* UPI Information */}
           <div className="text-center bg-white/60 p-4 rounded-lg border border-orange-200 w-full">
             <p className="text-sm font-semibold text-gray-800 mb-1">
-              UPI ID: <span className="text-orange-700">shri_vishwanatha@upi</span>
+              UPI ID: <span className="text-orange-700">srivgbt@sbi</span>
             </p>
             <p className="text-xs text-gray-600">
               (Scan the QR code or use UPI ID: srivgbt@sbi to donate)
