@@ -35,7 +35,7 @@ const DonationPopup = () => {
               filter: 'drop-shadow(0 0 15px rgba(251, 146, 60, 0.3))'
             }}>
               <img 
-                src="/lovable-uploads/784db43f-2f0e-4884-8523-c5798db1254e.png" 
+                src="/lovable-uploads/49347fb5-abda-4bb8-bfc2-c59ea928bf79.png" 
                 alt="Shri Vishwanatha Gangabhavani Trust Logo" 
                 className="w-full h-full object-contain"
               />
