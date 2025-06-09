@@ -18,15 +18,7 @@ const DonationPopup = () => {
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="max-w-md mx-auto bg-gradient-to-br from-orange-50 via-yellow-50 to-orange-100 border-2 border-orange-200 shadow-2xl max-h-[90vh] overflow-y-auto relative">
-        {/* Lord Shiva Background Image */}
-        <div 
-          className="absolute inset-0 opacity-5 bg-cover bg-center bg-no-repeat rounded-lg pointer-events-none"
-          style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1593341646782-e0b495cff86d?w=400&h=400&fit=crop&crop=center')`
-          }}
-        />
-        
+      <DialogContent className="max-w-md mx-auto bg-gradient-to-br from-orange-50 via-yellow-50 to-orange-100 border-2 border-orange-200 shadow-2xl max-h-[90vh] overflow-y-auto">
         {/* Close button */}
         <button
           onClick={() => setIsOpen(false)}
@@ -36,7 +28,7 @@ const DonationPopup = () => {
           <span className="sr-only">Close</span>
         </button>
 
-        <div className="flex flex-col items-center space-y-6 p-6 pt-8 relative z-10">
+        <div className="flex flex-col items-center space-y-6 p-6 pt-8">
           {/* Trust Logo with glow effect */}
           <div className="w-20 h-20 flex items-center justify-center rounded-full bg-white shadow-lg ring-4 ring-orange-200/50 p-2">
             <div className="w-full h-full rounded-full overflow-hidden shadow-lg" style={{
@@ -67,7 +59,7 @@ const DonationPopup = () => {
               filter: 'drop-shadow(0 0 10px rgba(251, 146, 60, 0.2))'
             }}>
               <img 
-                src="/lovable-uploads/aa2ca73a-f66c-4bd0-862a-1f91bca70370.png"
+                src="/lovable-uploads/88fa3114-bc31-4db5-ab84-a3254cc7330f.png"
                 alt="Donation QR Code"
                 className="w-48 h-48 object-contain rounded-lg"
               />
