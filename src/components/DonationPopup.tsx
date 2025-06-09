@@ -59,7 +59,7 @@ const DonationPopup = () => {
               filter: 'drop-shadow(0 0 10px rgba(251, 146, 60, 0.2))'
             }}>
               <img 
-                src="/lovable-uploads/88fa3114-bc31-4db5-ab84-a3254cc7330f.png"
+                src="/lovable-uploads/784db43f-2f0e-4884-8523-c5798db1254e.png"
                 alt="Donation QR Code"
                 className="w-48 h-48 object-contain rounded-lg"
               />
