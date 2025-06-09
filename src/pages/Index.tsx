@@ -95,8 +95,8 @@ const Index = () => {
                     <p className="text-gray-700 mt-2">The basement construction of our sacred temple has been successfully completed with devotees' blessings.</p>
                   </div>
                   <div className="border-l-4 border-blue-400 pl-4">
-                    <p className="font-semibold text-gray-800">500+ Devotees Participated in Shiva Kalyanam</p>
-                    <p className="text-sm text-gray-600">October 2024</p>
+                    <p className="font-semibold text-gray-800">2500+ Devotees Participated in Shiva Kalyanam</p>
+                    <p className="text-sm text-gray-600">November 2024</p>
                     <p className="text-gray-700 mt-2">A grand celebration of Lord Shiva's divine marriage brought together devotees from across the region.</p>
                   </div>
                 </div>
