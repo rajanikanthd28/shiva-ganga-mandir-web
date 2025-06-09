@@ -14,7 +14,7 @@ const DonationPopup = () => {
     // Auto-close after 15 seconds
     const timer = setTimeout(() => {
       setIsOpen(false);
-    }, 5000);
+    }, 3000);
 
     // Cleanup timer if component unmounts or popup is manually closed
     return () => clearTimeout(timer);
