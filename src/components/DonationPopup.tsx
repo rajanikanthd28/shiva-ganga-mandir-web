@@ -10,6 +10,14 @@ const DonationPopup = () => {
   useEffect(() => {
     // Show popup immediately when component mounts
     setIsOpen(true);
+
+    // Auto-close after 15 seconds
+    const timer = setTimeout(() => {
+      setIsOpen(false);
+    }, 15000);
+
+    // Cleanup timer if component unmounts or popup is manually closed
+    return () => clearTimeout(timer);
   }, []);
 
   const handleDonateNow = () => {
@@ -18,7 +26,7 @@ const DonationPopup = () => {
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="max-w-md mx-auto bg-gradient-to-br from-orange-50 via-yellow-50 to-orange-100 border-2 border-orange-200 shadow-2xl max-h-[90vh] overflow-y-auto">
+      <DialogContent className="max-w-md w-[50%] sm:w-full mx-auto bg-gradient-to-br from-orange-50 via-yellow-50 to-orange-100 border-2 border-orange-200 shadow-2xl max-h-[90vh] overflow-y-auto">
         {/* Close button */}
         <button
           onClick={() => setIsOpen(false)}
