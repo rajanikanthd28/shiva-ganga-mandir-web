@@ -40,7 +40,10 @@ const HeroSection = () => {
         {/* Inspirational Quote */}
         <div className="max-w-4xl mx-auto mb-8">
           <blockquote className="text-xl md:text-2xl text-gray-700 italic font-medium leading-relaxed">
-            "He who offers water to Lord Shiva, receives the grace of Ganga and the strength of the universe."
+            "  శంభో దేవేశ! దర్శించితిని నీ పుణ్య మందిరంబును  
+              గంగాధర! పరమ పవిత్రత కలిగిన ఘన ప్రాంగణంబు  
+              భక్తికరసంగమము జేసిన దినమున యాస్వీకారమున  
+              మోక్షసౌఖ్యము మూర్తించు మంగళదాయక! కరుణించుము॥"
           </blockquote>
           <div className="w-16 h-1 bg-gradient-to-r from-orange-400 to-red-500 mx-auto mt-4 rounded-full"></div>
         </div>
