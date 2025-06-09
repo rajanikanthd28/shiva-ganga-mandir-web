@@ -28,13 +28,13 @@ const Gallery = () => {
       id: '2',
       src: '/lovable-uploads/01029e1d-4ec5-4f44-b361-11f4584509ef.png',
       alt: 'Donation Drive Invitation',
-      category: 'invitations'
+      category: 'pamphlets'
     },
     {
       id: '3',
       src: '/lovable-uploads/5bba0d57-1c2c-4369-ad73-59ae505929ca.png',
       alt: 'Special Event Invitation',
-      category: 'invitations'
+      category: 'pamphlets'
     },
     // Photos
     {
