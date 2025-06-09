@@ -196,7 +196,7 @@ const DonationSection = () => {
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold text-gray-800 mb-4">🕉️ Your Blessings Matter</h3>
               <p className="text-gray-700 leading-relaxed mb-6">
-                "Annadanam Maha Danam" - The gift of building a temple is considered one of the greatest acts of charity. 
+                "దేవాలయ నిర్మాణే ధనస్యం ఫలం చ చిరస్మృతిం, భక్త జనానాం శాంతిం చ అనుగ్రహం చ కల్పయేత్।" - Donating to temple construction grants enduring merit and bestows peace and divine grace upon all devotees. The gift of building a temple is considered one of the greatest acts of charity. 
                 Your contribution not only helps in constructing the physical structure but also creates a spiritual 
                 center that will serve countless devotees for generations to come.
               </p>
