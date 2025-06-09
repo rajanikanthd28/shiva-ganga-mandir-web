@@ -54,7 +54,7 @@ const DonationPopup = () => {
           <div className="text-center">
             <h2 className="text-xl md:text-2xl font-bold text-gray-800 leading-tight">
               <span className="bg-gradient-to-r from-orange-700 to-red-700 bg-clip-text text-transparent">
-                Shri Vishwanatha Gangabhavani Trust
+                Shri Vishwanatha Gangabhavani Temple
               </span>
               <br />
               <span className="text-lg text-gray-700">Talamadla</span>
