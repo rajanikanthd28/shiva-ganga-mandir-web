@@ -168,16 +168,7 @@ const Gallery = () => {
             </TabsContent>
 
             <TabsContent value="pamphlets" className="mt-8">
-              <div className="text-center py-16">
-                <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-orange-200 to-yellow-200 rounded-full flex items-center justify-center">
-                  <span className="text-4xl">📋</span>
-                </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">Pamphlets Coming Soon</h3>
-                <p className="text-gray-600 max-w-md mx-auto">
-                  We're preparing our collection of spiritual pamphlets and publications. 
-                  Check back soon to explore our religious literature and guides.
-                </p>
-              </div>
+             <GalleryGrid items={filterItems('pamphlets')} />
             </TabsContent>
           </Tabs>
         </div>
