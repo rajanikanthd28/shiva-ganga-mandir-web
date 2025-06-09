@@ -18,6 +18,7 @@ const MobileNavigation = () => {
     { name: 'About', href: '#about' },
     { name: 'Trustees', href: '#trustees' },
     { name: 'Events', href: '#events' },
+    { name: 'Publications', href: '#gallery' },
     { name: 'Donate', href: '#donate' },
     { name: 'Contact', href: '#contact' },
   ];

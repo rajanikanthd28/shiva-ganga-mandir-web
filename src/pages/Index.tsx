@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -12,6 +11,7 @@ import DonationSection from '../components/DonationSection';
 import ContactSection from '../components/ContactSection';
 import MobileNavigation from '../components/MobileNavigation';
 import DonationPopup from '../components/DonationPopup';
+import Gallery from '../components/Gallery';
 
 const Index = () => {
   return (
@@ -42,6 +42,7 @@ const Index = () => {
               <a href="#about" className="text-gray-700 hover:text-orange-600 transition-colors">About</a>
               <a href="#trustees" className="text-gray-700 hover:text-orange-600 transition-colors">Trustees</a>
               <a href="#events" className="text-gray-700 hover:text-orange-600 transition-colors">Events</a>
+              <a href="#gallery" className="text-gray-700 hover:text-orange-600 transition-colors">Publications</a>
               <a href="#donate" className="text-gray-700 hover:text-orange-600 transition-colors">Donate</a>
               <a href="#contact" className="text-gray-700 hover:text-orange-600 transition-colors">Contact</a>
             </div>
@@ -66,6 +67,9 @@ const Index = () => {
 
       {/* Upcoming Activities */}
       <UpcomingActivities />
+
+      {/* Gallery Section */}
+      <Gallery />
 
       {/* Donation Section */}
       <DonationSection />
@@ -165,6 +169,7 @@ const Index = () => {
                 <li><a href="#about" className="text-gray-300 hover:text-orange-400 transition-colors">About Us</a></li>
                 <li><a href="#trustees" className="text-gray-300 hover:text-orange-400 transition-colors">Trustees</a></li>
                 <li><a href="#events" className="text-gray-300 hover:text-orange-400 transition-colors">Events</a></li>
+                <li><a href="#gallery" className="text-gray-300 hover:text-orange-400 transition-colors">Publications</a></li>
                 <li><a href="#donate" className="text-gray-300 hover:text-orange-400 transition-colors">Donate</a></li>
                 <li><a href="#contact" className="text-gray-300 hover:text-orange-400 transition-colors">Contact</a></li>
               </ul>
@@ -178,7 +183,7 @@ const Index = () => {
                 </a>
                 <a href="https://www.instagram.com/srivgbt/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                   </svg>
                 </a>
                 <a href="https://www.youtube.com/@SriVishwanathaGangabhavaniTrus" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition-colors">
